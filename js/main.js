@@ -4,7 +4,7 @@ require([
     "esri/identity/IdentityManager",
     "esri/portal/PortalQueryParams"
 ], function(Portal, OAuthInfo, esriId, PortalQueryParams){
-    /*
+    
     // esri agol authorization
     const info = new OAuthInfo({
         appId: "JAou9EbthRUw4TIJ",
@@ -22,5 +22,5 @@ require([
         }).catch(() => {
             console.log("User not signed in")
         });
-    */
+
 })
