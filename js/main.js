@@ -25,7 +25,7 @@ require([
         });
 
     const JCATMasterLayer = new FeatureLayer({
-        portalItem: { "f7023ca104044f9ea07b8f9bff525189" }
+        portalItem: { id: "f7023ca104044f9ea07b8f9bff525189" }
     });
     
     JCATMasterLayer.queryFeatures().then((results) => {
