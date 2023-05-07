@@ -2,8 +2,9 @@ require([
     "esri/portal/Portal",
     "esri/identity/OAuthInfo",
     "esri/identity/IdentityManager",
-    "esri/portal/PortalQueryParams"
-], function(Portal, OAuthInfo, esriId, PortalQueryParams){
+    "esri/portal/PortalQueryParams",
+    "esri/layers/FeatureLayer"
+], function(Portal, OAuthInfo, esriId, PortalQueryParams, FeatureLayer){
     
     // esri agol authorization
     const info = new OAuthInfo({
@@ -23,4 +24,11 @@ require([
             console.log("User not signed in")
         });
 
+    let JCATMasterLayer = FeatureLayer({
+        url: "https://faasysops.maps.arcgis.com/home/item.html?id=f7023ca104044f9ea07b8f9bff525189"
+    });
+    
+    JCATMasterLayer.queryFeatures().then((results) => {
+        console.log(results.features);
+    })
 })
