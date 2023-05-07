@@ -27,8 +27,4 @@ require([
     let JCATMasterLayer = FeatureLayer({
         url: "https://faasysops.maps.arcgis.com/home/item.html?id=f7023ca104044f9ea07b8f9bff525189"
     });
-    
-    JCATMasterLayer.queryFeatures().then((results) => {
-        console.log(results.features);
-    })
 })
