@@ -34,6 +34,7 @@ require([
                 $("#incident-list")[0].append(
                     "<calcite-list-item label='" + feature.attributes.incident_name + "'></calcite-list-item>"
                 )
+                console.log("<calcite-list-item label='" + feature.attributes.incident_name + "'></calcite-list-item>")
             }
         }
     });
