@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>JEDI 3.0</title>
+
+        <!--Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!--Calcite CDN CSS-->
+        <script type="module" src="https://js.arcgis.com/calcite-components/1.0.7/calcite.esm.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.0.7/calcite.css" />
+        <link disabled="true" id="arcgis-maps-sdk-theme-dark" rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/dark/main.css" />
+        <link disabled="false" id="arcgis-maps-sdk-theme-light" rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+
+        <!--ArcGIS Maps SDK for JavaScript 4.26-->
+        <script src="https://js.arcgis.com/4.26/"></script>
+        <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
+
+        <!--[if IE<9]
+            <link rel="stylesheet" href="css.style.css">
+        <![endIf]-->
+    </head>
+
+    <body>
+        <calcite-shell>
+            <div id="header-title" slot="header">
+                <h2>JEDI - JCAT Events Dashboard Instrument v3.0 UAT</h2>
+                <calcite-dropdown id="menu">
+                    <calcite-button slot="trigger" icon-start="hamburger" appearance="transparent" kind="neutral" scale="l"></calcite-button>
+                    <calcite-dropdown-group>
+                        <calcite-dropdown-item icon-start="web" href="https://faasysops.maps.arcgis.com/apps/dashboards/ef6744ae83874e979bb2c6e3dd8d8c07" target="_blank">IWL Dashboard</calcite-dropdown-item>
+                        <calcite-dropdown-item icon-start="attachment" href="https://faasysops.maps.arcgis.com/apps/dashboards/ef6744ae83874e979bb2c6e3dd8d8c07" target="_blank">Attachment A</calcite-dropdown-item>
+                        <calcite-dropdown-item icon-start="attachment" href="https://faasysops.maps.arcgis.com/apps/dashboards/ef6744ae83874e979bb2c6e3dd8d8c07" target="_blank">Attachment C</calcite-dropdown-item>
+                        <calcite-dropdown-item icon-start="information" href="https://faasysops.maps.arcgis.com/apps/dashboards/ef6744ae83874e979bb2c6e3dd8d8c07" target="_blank">User Guide</calcite-dropdown-item>
+                        <calcite-dropdown-item icon-start="app-launcher" href="https://faasysops.maps.arcgis.com/apps/dashboards/ef6744ae83874e979bb2c6e3dd8d8c07" target="_blank">ADIT</calcite-dropdown-item>
+                    </calcite-dropdown-group>
+                </calcite-dropdown>
+            </div>
+
+            <calcite-action-bar expanded id="incident-bar" scale="l">
+                <calcite-label class="new-incident"></calcite-label>
+                <calcite-button icon-start="plus-circle" appearance="transparent" kind="inverse" scale="l" class="new-incident" id="new-incident-btn"></calcite-button>
+                <calcite-label class="new-incident" id="list-label"><h4 style="color:white;">Incident List</h4></calcite-label>
+                <div id="list-container" style="height: 75%; overflow-y: auto;">
+                    <calcite-list filter-enabled filter-placeholder="Filter Incident" style="width:173.3px" id="incident-list">
+                        <calcite-list-item label="Sample IWL"></calcite-list-item>
+                        <calcite-list-item label="Sample IWL 2"></calcite-list-item>
+                        <calcite-list-item label="Sample IWL 3"></calcite-list-item>
+                        <calcite-list-item label="Sample IWL 4"></calcite-list-item>
+                    </calcite-list>   
+                </div>
+                <calcite-action slot="bottom-actions" icon="layers" text="Refresh IWLs" appearance="transparent" kind="neutral" scale="l" id="refresh-iwl"></calcite-action>
+                <calcite-label slot="bottom-actions" style="text-align:center;background-color: rgb(68,68,68);"><p style="color: white;margin:0;padding:.25em;background-color: rgb(68,68,68);">Last Refreshed:<br>X/X/XXXX XX:XX XX</p></calcite-label>
+            </calcite-action-bar>
+
+            <calcite-panel id="survey-panel" class="survey">
+                <div id="survey-header">JCAT Incident Details</div>
+                <div id="incident-details-container" class="module-container"></div>
+                <div id="module1-container" class="module-container"></div>
+                <div id="module2-container" class="module-container"></div>
+                <div id="module3-container" class="module-container"></div>
+                <div id="module4-container" class="module-container"></div>
+                <div id="module5-container" class="module-container"></div>
+                <div id="module6-container" class="module-container"></div>
+                <div id="module7-container" class="module-container"></div>
+                <div id="module8-container" class="module-container"></div>
+                <div id="tab-container">
+                    <calcite-segmented-control id="module-tabs">
+                        <calcite-segmented-control-item value="incident-details" checked>Incident Details</calcite-segmented-control-item>
+                        <calcite-segmented-control-item value="1">1. Key Takeaways</calcite-segmented-control-item>
+                        <calcite-segmented-control-item value="2">2. Threats & Hazards</calcite-segmented-control-item>
+                        <calcite-segmented-control-item value="3">3. IWA/IWL Stats</calcite-segmented-control-item>
+                        <calcite-segmented-control-item value="4">4. TFM Impacts/Outlook</calcite-segmented-control-item>
+                        <calcite-segmented-control-item value="5">5. Operational Response</calcite-segmented-control-item>
+                        <calcite-segmented-control-item value="6">6. Response & Recovery</calcite-segmented-control-item>
+                        <calcite-segmented-control-item value="7">7. Key Response Nodes</calcite-segmented-control-item>
+                        <calcite-segmented-control-item value="8">8. Approval</calcite-segmented-control-item>
+                    </calcite-segmented-control>                    
+                </div>
+            </calcite-panel>
+            
+            <calcite-panel heading="PDF Viewer Panel" id="doc-viewer" class="viewer"></calcite-panel>
+            <calcite-panel heading="Form Viewer Panel" id="form-viewer" class="viewer" hidden></calcite-panel>
+
+            <calcite-action-pad expand-disabled id="viewer-pad">
+                    <calcite-action-group>
+                        <calcite-action text="Form View" icon="form-elements" id="form-view-btn" scale="l"></calcite-action>
+                        <calcite-tooltip label="Form View" reference-element="form-view-btn">Form View</calcite-tooltip>
+                        <calcite-action text="Document View" icon="file-pdf" id="doc-view-btn" scale="l" active></calcite-action>
+                        <calcite-tooltip label="Document View" reference-element="doc-view-btn">Document View</calcite-tooltip>
+                    </calcite-action-group>
+                </calcite-action-pad>
+
+        </calcite-shell>
+
+        <script src="lib/jquery-3.6.4.js"></script>
+        <script src="js/layout.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

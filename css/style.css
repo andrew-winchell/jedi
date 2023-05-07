@@ -1,0 +1,72 @@
+#header-title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#header-title h2 {
+    display: inline-block;
+}
+
+#menu { 
+    float: right;
+    margin-top: 7px;
+}
+
+.new-incident {
+    align-self: center;
+}
+
+#tab-container {
+    position: absolute;
+    bottom: 0;
+    overflow: auto;
+    width: -webkit-fill-available;
+}
+
+#module-tabs {
+    width: max-content;
+}
+
+#incident-bar {
+    height: 100%;
+    position: absolute;
+    background-color: rgb(68,68,68);
+}
+
+#incident-bar calcite-action {
+    background-color: rgb(68,68,68);
+}
+
+#viewer-pad {
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
+
+#survey-panel {
+    border: 0;
+}
+
+.survey {
+    width: calc(50% - 173.3px);
+    position: absolute;
+    left: 173.3px;
+}
+
+.viewer {
+    width: calc(50% - 64px);
+    position: absolute;
+    right: 64px;
+}
+
+#survey-header {
+    background-color: rgb(29,49,64);
+    color: white;
+    padding: 5px;
+    font-family: calibri;
+    font-size: 12pt;
+}
+
+#incident-list calcite-list-item {
+    background-color: rgb(68,68,68);
+}
