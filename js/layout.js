@@ -8,6 +8,7 @@ $("#incident-bar").on("calciteActionBarToggle", () => {
     $("#list-container")[0].hidden = visibility;
     $("#new-incident-btn")[0].hidden = visibility;
     $("#refresh-iwl")[0].hidden = visibility;
+    $("#refresh-container")[0].hidden = visibility;
 
     // height
     let height = actionBarExpanded ? "80%" : "75%";
@@ -66,9 +67,3 @@ $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
             break;
     }
 });
-
-// Action item background
-$(document).ready(() => {
-    let bar = $("#incident-bar")[0].shadowRoot
-    console.log($(bar).find("calcite-action").prevObject)
-})
