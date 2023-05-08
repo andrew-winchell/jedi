@@ -29,7 +29,7 @@ require([
     });
     
     JCATMasterLayer.queryFeatures().then((results) => {
-        for (const feature in results.feature) {
+        for (const feature in results.features) {
             if (feature.attributes.incident_name != null) {
                 $("#incident-list").append(
                     "<calcite-list-item label='" + feature.attributes.incident_name + "'></calcite-list-item>"
