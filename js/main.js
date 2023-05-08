@@ -42,7 +42,6 @@ require([
 
     $("#incident-filter").on("calciteFilterChange", (e) => {
         let incidentItems = $("#incident-list")[0].children
-        console.log($("#incident-list")[0])
         for (const item of incidentItems) {
             if (!item.label.includes(e.target.value)) {
                 item.hidden = true;
