@@ -41,6 +41,9 @@ require([
     });
 
     $("#incident-filter").on("calciteFilterChange", (e) => {
-        console.log(e)
+        let incidentItems = $("#incident-list")
+        console.log(incidentItems)
+        console.log(e.target.value)
+        
     })
 })
