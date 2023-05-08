@@ -46,6 +46,8 @@ require([
         for (const item of incidentItems) {
             if (!item.label.includes(e.target.value)) {
                 item.hidden = true;
+            } else {
+                item.hidden = false;
             }
         }
         
