@@ -35,15 +35,17 @@ require([
                 $("#incident-list").append(
                     "<calcite-list-item label='" + feature.attributes.incident_name + "'></calcite-list-item>"
                 )
-                console.log("<calcite-list-item label='" + feature.attributes.incident_name + "'></calcite-list-item>")
             }
-        }
+        };
     });
 
+    // filter incident list
     $("#incident-filter").on("calciteFilterChange", (e) => {
         let incidentItems = $("#incident-list")[0].children;
+        let filterText = e.target.value.toUpperCase();
         for (const item of incidentItems) {
-            if (!item.label.includes(e.target.value)) {
+            let name = item.label.toUpperCase();
+            if (!name.includes(filterText)) {
                 item.hidden = true;
             } else {
                 item.hidden = false;
