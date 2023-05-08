@@ -44,7 +44,6 @@ require([
                     + currentDate.getHours() + ":"
                     + currentDate.getMinutes();
         $("#refresh-text").html(dateTime)
-        console.log(Date());
     });
 
     // filter incident list
