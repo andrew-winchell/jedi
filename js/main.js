@@ -53,8 +53,7 @@ require([
         let dateTime = "Last Refreshed:<br>" + (currentDate.getMonth()+1) + "/"
                     + currentDate.getDate() + "/"
                     + currentDate.getFullYear() + " "
-                    + currentDate.getHours() + ":"
-                    + currentDate.getMinutes();
+                    + currentDate.toLocaleTimeString()
         $("#refresh-text").html(dateTime);
     });
 
