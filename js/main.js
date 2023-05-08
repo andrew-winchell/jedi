@@ -39,4 +39,8 @@ require([
             }
         }
     });
+
+    $("#incident-filter").on("calciteFilterChange", (e) => {
+        console.log(e)
+    })
 })
