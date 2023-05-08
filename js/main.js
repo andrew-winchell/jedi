@@ -30,7 +30,6 @@ require([
     
     // load incident list
     JCATMasterLayer.queryFeatures().then((results) => {
-        console.log(results)
         for (const feature of results.features) {
             if (feature.attributes.incident_name != null) {
                 $("#incident-list").append(
@@ -38,6 +37,13 @@ require([
                 )
             }
         };
+        let currentDate = new Date();
+        let dateTime = "Last Refreshed:<br>" + currentDate.getDate() + "/"
+                    + (currentDate.getMonth()+1) + "/"
+                    + currentDate.getFullYear() + " "
+                    + currentDate.getHours() + ":"
+                    + currentDate.getMinutes();
+        $("#refresh-text").html(dateTime)
         console.log(Date());
     });
 
