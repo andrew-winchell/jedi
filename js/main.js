@@ -37,13 +37,26 @@ require([
                 )
             }
         };
+        
+        // update refresh time
         let currentDate = new Date();
         let dateTime = "Last Refreshed:<br>" + (currentDate.getMonth()+1) + "/"
                     + currentDate.getDate() + "/"
                     + currentDate.getFullYear() + " "
                     + currentDate.getHours() + ":"
                     + currentDate.getMinutes();
-        $("#refresh-text").html(dateTime)
+        $("#refresh-text").html(dateTime);
+    });
+
+    // Refresh IWLs
+    $("#refresh-iwl").on("click", () => {
+        let currentDate = new Date();
+        let dateTime = "Last Refreshed:<br>" + (currentDate.getMonth()+1) + "/"
+                    + currentDate.getDate() + "/"
+                    + currentDate.getFullYear() + " "
+                    + currentDate.getHours() + ":"
+                    + currentDate.getMinutes();
+        $("#refresh-text").html(dateTime);
     });
 
     // filter incident list
