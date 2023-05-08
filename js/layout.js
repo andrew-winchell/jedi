@@ -73,5 +73,5 @@ $(document).ready(() => {
     let sr = $("#refresh-iwl")[0].shadowRoot;
     let buttons = $("button");
     console.log(sr)
-    console.log($(sr).find(buttons).prevObject[0]);
+    console.log($(sr).find(buttons));
 })
