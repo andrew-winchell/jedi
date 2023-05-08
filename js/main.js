@@ -41,14 +41,13 @@ require([
     });
 
     $("#incident-filter").on("calciteFilterChange", (e) => {
-        let incidentItems = $("#incident-list")[0].children
+        let incidentItems = $("#incident-list")[0].children;
         for (const item of incidentItems) {
             if (!item.label.includes(e.target.value)) {
                 item.hidden = true;
             } else {
                 item.hidden = false;
             }
-        }
-        
-    })
+        };
+    });
 })
