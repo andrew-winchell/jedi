@@ -9,6 +9,7 @@ $("#incident-bar").on("calciteActionBarToggle", () => {
     $("#new-incident-btn")[0].hidden = visibility;
     $("#refresh-iwl")[0].hidden = visibility;
     $("#refresh-container")[0].hidden = visibility;
+    $("#incident-filter")[0].hidden = visibility;
 
     // height
     let height = actionBarExpanded ? "80%" : "75%";
