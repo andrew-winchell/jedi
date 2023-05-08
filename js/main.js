@@ -29,6 +29,7 @@ require([
     });
     
     JCATMasterLayer.queryFeatures().then((results) => {
+        console.log(results)
         for (const feature in results.features) {
             if (feature.attributes.incident_name != null) {
                 $("#incident-list").append(
