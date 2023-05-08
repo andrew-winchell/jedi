@@ -16,7 +16,7 @@ $("#incident-bar").on("calciteActionBarToggle", () => {
     $("#list-container").css("height", height);
     
     // width
-    let width = actionBarExpanded ? "64px" : "173.3px";
+    let width = actionBarExpanded ? "48px" : "173.3px";
     $(".survey").css("left", width);
     $(".survey").css("width", "calc(50% - " + width + ")");
 });
