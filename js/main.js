@@ -14,7 +14,6 @@ require([
         flowType: "auto",
         popup: false
     });
-    
     esriId.registerOAuthInfos([info]);
     esriId.getCredential(info.portalUrl + "/sharing");
     esriId.checkSignInStatus(info.portalURL + "/sharing")
@@ -24,10 +23,12 @@ require([
             console.log("User not signed in")
         });
 
+    // IWA/IWL Layer
     const JCATMasterLayer = new FeatureLayer({
         portalItem: { id: "f7023ca104044f9ea07b8f9bff525189" }
     });
     
+    // load incident list
     JCATMasterLayer.queryFeatures().then((results) => {
         console.log(results)
         for (const feature of results.features) {
@@ -37,6 +38,7 @@ require([
                 )
             }
         };
+        console.log(Date());
     });
 
     // filter incident list
