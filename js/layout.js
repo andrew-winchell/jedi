@@ -71,6 +71,7 @@ $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
 
 $(document).ready(() => {
     let sr = $("#refresh-iwl")[0].shadowRoot;
+    let buttons = $("button");
     console.log(sr)
-    console.log($(sr).find("button"));
+    console.log($(sr).find(buttons));
 })
