@@ -1,8 +1,7 @@
 $("#refresh-iwl").on("click", () => {
         const pdf = new jsPDF({
             orientation: "portrait",
-            unit: "in",
-            format: [8.5, 11]
+            format: "letter"
         });
         
         pdf.text("Generate a PDF with JavaScript", 20, 20);
