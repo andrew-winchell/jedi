@@ -5,13 +5,15 @@ $("#refresh-iwl").on("click", () => {
         });
 
         let refreshText = "";
-        delay(1000).then(() => { refreshText = $("#refresh-text")[0].textContent });
-        pdf.text(refreshText, 20, 20);
-        pdf.addPage();
-        pdf.text(20, 20, "The second page");
-        
-        let base64string = pdf.output("bloburl");
-        debugBase64(base64string);
+        delay(1000).then(() => { 
+            refreshText = $("#refresh-text")[0].textContent
+            pdf.text(refreshText, 20, 20);
+            pdf.addPage();
+            pdf.text(20, 20, "The second page");
+            
+            let base64string = pdf.output("bloburl");
+            debugBase64(base64string);
+        });
 });
 
 function debugBase64 (base64string) {
