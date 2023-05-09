@@ -1,5 +1,3 @@
-import { jsPDF } from "jspdf";
-
 $("#refresh-iwl").on("click", () => {
         const pdf = new jsPDF({
             orientation: "portrait",
