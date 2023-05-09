@@ -67,19 +67,19 @@
 }
 
 #incident-list calcite-list-item {
-    /*background-color: rgb(68,68,68);*/
+    background-color: rgb(68,68,68);
 }
 
 #refresh-container {
     text-align: center;
-    /*background-color: rgb(68,68,68);*/
+    background-color: rgb(68,68,68);
 }
 
 #refresh-text {
     color: rgb(255,255,255);
     margin: 0;
     padding: .25em;
-    /*background-color: rgb(68,68,68);*/
+    background-color: rgb(68,68,68);
 }
 
 #incident-filter {
