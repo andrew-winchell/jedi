@@ -17,5 +17,5 @@ $("#refresh-iwl").on("click", () => {
             console.log(base64string)
         }
         
-        // pdf.save("jsPDF_2pages.pdf");
+        //pdf.save("jsPDF_2pages.pdf");
 });
