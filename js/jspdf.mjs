@@ -1,4 +1,4 @@
-import { jsPDF } from "/jspdf";
+import { jsPDF } from "/jspdf.umd.min.js";
 
 $("#refresh-iwl").on("click", () => {
         const pdf = new jsPDF({
