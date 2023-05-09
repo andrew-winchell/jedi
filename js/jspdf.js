@@ -8,7 +8,13 @@ $("#refresh-iwl").on("click", () => {
         pdf.text(refreshText, 20, 20);
         pdf.addPage();
         pdf.text(20, 20, "The second page");
-        pdf.output("datauri", "generated.pdf")
+        
+        let base64string = doc.output("bloburl");
+        debugBase64(base64string);
+
+        function debugBase64 (base64string) {
+            console.log($("#pdf-viewer"))
+        }
         
         //pdf.save("jsPDF_2pages.pdf");
 });
