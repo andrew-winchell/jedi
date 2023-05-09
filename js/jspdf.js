@@ -5,7 +5,7 @@ $("#refresh-iwl").on("click", () => {
         });
 
         let refreshText = "";
-        delay(1000).then(() => { 
+        delay(500).then(() => { 
             refreshText = $("#refresh-text")[0].textContent
             pdf.text(refreshText, 20, 20);
             pdf.addPage();
