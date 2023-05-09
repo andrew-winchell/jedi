@@ -13,8 +13,7 @@ $("#refresh-iwl").on("click", () => {
         debugBase64(base64string);
 
         function debugBase64 (base64string) {
-            console.log($("#pdf-viewer"))
-            console.log(base64string)
+            $("#pdf-viewer")[0].src = base64string
         }
         
         // pdf.save("jsPDF_2pages.pdf");
