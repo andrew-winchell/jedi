@@ -11,10 +11,8 @@ $("#refresh-iwl").on("click", () => {
         
         let base64string = pdf.output("bloburl");
         debugBase64(base64string);
-
-        function debugBase64 (base64string) {
-            $("#pdf-viewer")[0].src = base64string
-        }
-        
-        // pdf.save("jsPDF_2pages.pdf");
 });
+
+function debugBase64 (base64string) {
+    $("#pdf-viewer")[0].src = base64string
+}
