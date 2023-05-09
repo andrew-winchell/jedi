@@ -42,7 +42,7 @@
     right: 0;
 }
 
-#survey-panel {
+calcite-panel {
     border: 0;
 }
 
@@ -74,6 +74,7 @@
     text-align: center;
     background-color: rgb(68,68,68);
 }
+
 
 #refresh-text {
     color: rgb(255,255,255);
