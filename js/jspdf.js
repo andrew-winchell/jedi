@@ -3,8 +3,9 @@ $("#refresh-iwl").on("click", () => {
             orientation: "portrait",
             format: "letter"
         });
-        
-        let refreshText = $("#refresh-text")[0].textContent;
+
+        let refreshText = "";
+        delay(1000).then(() => { refreshText = $("#refresh-text")[0].textContent });
         pdf.text(refreshText, 20, 20);
         pdf.addPage();
         pdf.text(20, 20, "The second page");
@@ -15,4 +16,8 @@ $("#refresh-iwl").on("click", () => {
 
 function debugBase64 (base64string) {
     $("#pdf-viewer")[0].src = base64string
+}
+
+function delay (time) {
+    return new Promise(resolve => setTimeout(resolve, time));
 }
