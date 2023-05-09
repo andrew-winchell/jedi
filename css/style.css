@@ -85,3 +85,8 @@
 #incident-filter {
     width: 173.3px;
 }
+
+#pdf-viewer {
+    width: inherit;
+    height: -webkit-fill-available;
+}
