@@ -4,8 +4,9 @@ $("#refresh-iwl").on("click", () => {
             format: "letter"
         });
         
-        let refreshText = $("#refresh-text")[0].value;
-        pdf.text(refreshText, 20, 20);
+        let refreshText = $("#refresh-text");
+        console.log(refreshText)
+        pdf.text("", 20, 20);
         pdf.addPage();
         pdf.text(20, 20, "The second page");
         
