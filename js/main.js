@@ -40,7 +40,7 @@ require([
         
         // update refresh time
         let currentDate = new Date();
-        let dateTime = "Last Refreshed:<br>" + (currentDate.getMonth()+1) + "/"
+        let dateTime = "Last Refreshed: <br>" + (currentDate.getMonth()+1) + "/"
                     + currentDate.getDate() + "/"
                     + currentDate.getFullYear() + " "
                     + currentDate.toLocaleTimeString()
@@ -50,7 +50,7 @@ require([
     // Refresh IWLs
     $("#refresh-iwl").on("click", () => {
         let currentDate = new Date();
-        let dateTime = "Last Refreshed:<br>" + (currentDate.getMonth()+1) + "/"
+        let dateTime = "Last Refreshed: <br>" + (currentDate.getMonth()+1) + "/"
                     + currentDate.getDate() + "/"
                     + currentDate.getFullYear() + " "
                     + currentDate.toLocaleTimeString();
