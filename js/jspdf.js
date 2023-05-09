@@ -4,17 +4,17 @@ $("#refresh-iwl").on("click", () => {
             format: "letter"
         });
         
-        let refreshText = $("#refresh-text");
-        console.log(refreshText)
-        pdf.text("", 20, 20);
+        let refreshText = $("#refresh-text")[0].textContent;
+        pdf.text(refreshText, 20, 20);
         pdf.addPage();
         pdf.text(20, 20, "The second page");
         
-        let base64string = doc.output("bloburl");
+        let base64string = pdf.output("bloburl");
         debugBase64(base64string);
 
         function debugBase64 (base64string) {
             console.log($("#pdf-viewer"))
+            console.log(base64string)
         }
         
         //pdf.save("jsPDF_2pages.pdf");
