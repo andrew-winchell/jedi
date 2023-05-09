@@ -4,8 +4,11 @@ $("#refresh-iwl").on("click", () => {
             format: "letter"
         });
         
-        pdf.text("Generate a PDF with JavaScript", 20, 20);
+        let refreshText = $("#refresh-text")[0].value;
+        pdf.text(refreshText, 20, 20);
         pdf.addPage();
         pdf.text(20, 20, "The second page");
-        pdf.save("jsPDF_2pages.pdf");
+        pdf.output("datauri", "generated.pdf")
+        
+        //pdf.save("jsPDF_2pages.pdf");
 });
