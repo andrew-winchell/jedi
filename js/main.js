@@ -80,8 +80,8 @@ require([
             .then((results) => {
                 let feature = results.features[0];
                 $("#kt-incident-name").text(feature.attributes.incident_name);
-                $("#kt-incident-id")[0].text(feature.attributes.incident);
-                $("#kt-report-id")[0].text(feature.attributes.report);
+                $("#kt-incident-id").text(feature.attributes.incident);
+                $("#kt-report-id").text(feature.attributes.report);
             })
     });
 })
