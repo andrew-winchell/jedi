@@ -78,8 +78,3 @@ $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
             break;
     }
 });
-
-$(document).ready(() => {
-    let sr = $("#refresh-iwl")[0].shadowRoot;
-    let buttons = $("button");
-})
