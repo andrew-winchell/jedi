@@ -108,38 +108,56 @@
                                         </calcite-label>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <calcite-label>
+                                            Report ID
+                                            <calcite-input placeholder="ATO SITREP X"></calcite-input>
+                                        </calcite-label>
+                                    </td>
+                                    <td>
+                                        <calcite-label>
+                                            Incident Locations
+                                            <calcite-input placeholder="Example: GOMEX; LA; TX"></calcite-input>
+                                        </calcite-label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <calcite-label>
+                                            Incident Start DateTime
+                                            <calcite-input-date-picker></calcite-input-date-picker>
+                                            <calcite-input-time-picker></calcite-input-time-picker>
+                                        </calcite-label>
+                                    </td>
+                                    <td>
+                                        <calcite-label>
+                                            Report DateTime
+                                            <calcite-input-date-picker></calcite-input-date-picker>
+                                            <calcite-input-time-picker></calcite-input-time-picker>
+                                        </calcite-label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <calcite-label>
+                                            Threat Name
+                                            <calcite-input placeholder="Example: Hurricane Hughes"></calcite-input>
+                                        </calcite-label>
+                                    </td>
+                                    <td>
+                                        <calcite-label>
+                                            Status of Incident
+                                            <calcite-combobox selection-mode="single">
+                                                <calcite-combobox-item value="Open" text-label="Open"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Sustained" text-label="Sustained"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Close" text-label="Close"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Archive" text-label="Archive"></calcite-combobox-item>
+                                            </calcite-combobox>
+                                        </calcite-label>
+                                    </td>
+                                </tr>
                             </table>
-                            <calcite-label>
-                                Report ID
-                                <calcite-input placeholder="ATO SITREP X"></calcite-input>
-                            </calcite-label>
-                            <calcite-label>
-                                Incident Locations
-                                <calcite-input placeholder="Example: GOMEX; LA; TX"></calcite-input>
-                            </calcite-label>
-                            <calcite-label>
-                                Incident Start DateTime
-                                <calcite-input-date-picker></calcite-input-date-picker>
-                                <calcite-input-time-picker></calcite-input-time-picker>
-                            </calcite-label>
-                            <calcite-label>
-                                Report DateTime
-                                <calcite-input-date-picker></calcite-input-date-picker>
-                                <calcite-input-time-picker></calcite-input-time-picker>
-                            </calcite-label>
-                            <calcite-label>
-                                Threat Name
-                                <calcite-input placeholder="Example: Hurricane Hughes"></calcite-input>
-                            </calcite-label>
-                            <calcite-label>
-                                Status of Incident
-                                <calcite-combobox selection-mode="single">
-                                    <calcite-combobox-item value="Open" text-label="Open"></calcite-combobox-item>
-                                    <calcite-combobox-item value="Sustained" text-label="Sustained"></calcite-combobox-item>
-                                    <calcite-combobox-item value="Close" text-label="Close"></calcite-combobox-item>
-                                    <calcite-combobox-item value="Archive" text-label="Archive"></calcite-combobox-item>
-                                </calcite-combobox>
-                            </calcite-label>
                         </form>
                     </div>
                 </div>
