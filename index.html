@@ -61,7 +61,12 @@
             <calcite-panel id="survey-panel" class="survey">
                 <div id="survey-header">JCAT Incident Details</div>
                 <div>
-                    <h2>Select a mode</h2>
+                    <p>Select the appropriate mode option to utilize  only the necessary modules for the incident:</p>
+                    <calcite-combobox selection-mode="single" id="input-mode">
+                        <calcite-combobox-item value="Standard" text-label="Standard"></calcite-combobox-item>
+                        <calcite-combobox-item value="Lite1" text-label="Lite Mode 1"></calcite-combobox-item>
+                        <calcite-combobox-item value="Lite2" text-label="Lite Mode 2"></calcite-combobox-item>
+                    </calcite-combobox>
                 </div>
                 <div id="incident-details-container" class="module-container">
                     <div class="form-container">
