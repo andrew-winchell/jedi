@@ -78,7 +78,7 @@ require([
         query.where = "incident_name = '" + incidentName + "'";
         JCATMasterLayer.queryFeatures(query)
             .then((results) => {
-                console.log(results)
+                console.log(results);
             })
     });
 })
