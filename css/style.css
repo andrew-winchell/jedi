@@ -130,6 +130,6 @@ td {
 }
 
 #mode-expander {
-    position: relative;
-    bottom: -42px;
+    margin-left: auto;
+    margin-right: auto;
 }
