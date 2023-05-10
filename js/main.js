@@ -78,6 +78,7 @@ require([
         query.where = "incident_name = '" + incidentName + "'";
         JCATMasterLayer.queryFeatures(query)
             .then((results) => {
+                console.log(results);
                 let feature = results.features[0];
                 console.log($("#kt-incident-name"));
                 $("#kt-incident-name").append(feature.incident_name);
