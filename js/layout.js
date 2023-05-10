@@ -78,3 +78,8 @@ $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
             break;
     }
 });
+
+// Survey mode panel toggle
+$("#mode-expander").on("click", (e) => {
+    $("#mode-container").slideToggle("slow");
+});
