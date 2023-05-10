@@ -107,6 +107,7 @@ td {
 .module-container {
     overflow: hidden;
     display: contents;
+    height: -webkit-fill-available;
 }
 
 .form-container {
