@@ -91,3 +91,7 @@ calcite-panel {
     width: inherit;
     height: -webkit-fill-available;
 }
+
+.module-container {
+    overflow: hidden;
+}

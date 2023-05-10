@@ -37,6 +37,8 @@ $("#form-view-btn").on("click", (e) => {
 
 // Survey section header
 $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
+    let containers = $(".module-container");
+    console.log(containers);
     let header = $("#survey-header")
     switch(e.target.value) {
         case "incident-details":
