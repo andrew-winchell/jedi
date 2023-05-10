@@ -81,10 +81,10 @@ require([
                 let feature = results.features[0];
                 console.log(feature);
                 // incident details inputs
-                $("#incident-name")[0].value(feature.attributes.incident_name);
-                $("#incident-id")[0].value(feature.attributes.incident);
-                $("#report-id")[0].value(feature.attributes.report);
-                $("#incident-type")[0].value(feature.attributes.report);
+                $("#incident-name")[0].value = feature.attributes.incident_name;
+                $("#incident-id")[0].value = feature.attributes.incident;
+                $("#report-id")[0].value = feature.attributes.report;
+                $("#incident-type")[0].value = feature.attributes.report;
 
                 // key takeaways inputs
                 $("#kt-incident-name").text(feature.attributes.incident_name);
