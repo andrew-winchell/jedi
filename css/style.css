@@ -131,6 +131,5 @@ td {
 
 #mode-expander {
     position: relative;
-    top: calc(100% + 10px);
-    height: 25px;
+    bottom: -42px;
 }
