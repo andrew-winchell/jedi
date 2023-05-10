@@ -95,3 +95,7 @@ calcite-panel {
 .module-container {
     overflow: hidden;
 }
+
+.form-container {
+    overflow: scroll;
+}
