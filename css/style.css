@@ -106,7 +106,7 @@ td {
 
 .module-container {
     overflow: hidden;
-    display: contents;
+    display: inline-grid;
     height: -webkit-fill-available;
 }
 
