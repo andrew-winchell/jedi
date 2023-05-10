@@ -115,3 +115,14 @@ td {
     overflow-x: hidden;
     height: -webkit-fill-available;
 }
+
+#input-mode {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+#mode-container {
+    text-align: center;
+    background-color: aliceblue;
+}
