@@ -78,12 +78,10 @@ require([
         query.where = "incident_name = '" + incidentName + "'";
         JCATMasterLayer.queryFeatures(query)
             .then((results) => {
-                console.log(results);
                 let feature = results.features[0];
-                console.log(feature)
-                $("#kt-incident-name").append(feature.incident_name);
-                $("#kt-incident-id")[0].append(feature.incident);
-                $("#kt-report-id")[0].append(feature.report);
+                $("#kt-incident-name").append(feature.attributes.incident_name);
+                $("#kt-incident-id")[0].append(feature.attributes.incident);
+                $("#kt-report-id")[0].append(feature.attributes.report);
             })
     });
 })
