@@ -79,9 +79,9 @@ require([
         JCATMasterLayer.queryFeatures(query)
             .then((results) => {
                 let feature = results.features[0];
-                $("#kt-incident-name").append(feature.attributes.incident_name);
-                $("#kt-incident-id")[0].append(feature.attributes.incident);
-                $("#kt-report-id")[0].append(feature.attributes.report);
+                $("#kt-incident-name").text(feature.attributes.incident_name);
+                $("#kt-incident-id")[0].text(feature.attributes.incident);
+                $("#kt-report-id")[0].text(feature.attributes.report);
             })
     });
 })
