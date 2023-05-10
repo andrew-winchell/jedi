@@ -82,4 +82,10 @@ $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
 // Survey mode panel toggle
 $("#mode-expander").on("click", (e) => {
     $("#mode-container").slideToggle("slow");
+    let icon = $("#mode-expander").icon-start;
+    if (icon == "chevron-up") {
+        icon = "chevron-down";
+    } else {
+        icon = "chevron-up";
+    }
 });
