@@ -17,9 +17,11 @@
 }
 
 #tab-container {
-    position: absolute;
+    height: 55px;
+    position: sticky;
     bottom: 0;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     width: -webkit-fill-available;
 }
 
@@ -109,4 +111,5 @@ td {
 
 .form-container {
     overflow-y: auto;
+    height: -webkit-fill-available;
 }
