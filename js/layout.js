@@ -79,7 +79,7 @@ $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
     }
 });
 
-// Survey mode panel toggle
+// Survey mode panel slide toggle
 $("#mode-expander").on("click", (e) => {
     $("#mode-container").slideToggle("slow");
     let icon = $("#mode-expander").icon-start;
