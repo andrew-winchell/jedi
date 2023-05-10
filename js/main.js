@@ -70,4 +70,9 @@ require([
             }
         };
     });
+
+    // select an incident
+    $("#incident-list").on("click", (e) => {
+        console.log(e);
+    });
 })
