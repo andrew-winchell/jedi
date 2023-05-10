@@ -84,6 +84,7 @@ require([
                 $("#incident-id").text(feature.attributes.incident);
                 $("#report-id").text(feature.attributes.report);
                 console.log($("#incident-type"))
+                console.log($("#incident-name"))
 
                 // key takeaways inputs
                 $("#kt-incident-name").text(feature.attributes.incident_name);
