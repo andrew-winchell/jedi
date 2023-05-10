@@ -80,7 +80,7 @@ require([
             .then((results) => {
                 console.log(results);
                 let feature = results.features[0];
-                console.log($("#kt-incident-name"));
+                console.log(feature)
                 $("#kt-incident-name").append(feature.incident_name);
                 $("#kt-incident-id")[0].append(feature.incident);
                 $("#kt-report-id")[0].append(feature.report);
