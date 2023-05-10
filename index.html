@@ -75,7 +75,7 @@
                         </calcite-label>
                         <calcite-label>
                             Incident Type
-                            <calcite-combobox placeholder="Select weather type">
+                            <calcite-combobox placeholder="Select weather type" selectionMode="single">
                                 <calcite-combobox-item value="Tropical Cyclone" text-label="Tropical Cyclone"></calcite-combobox-item>
                                 <calcite-combobox-item value="Winter Storm" text-label="Winter Storm"></calcite-combobox-item>
                                 <calcite-combobox-item value="Flood" text-label="Flood"></calcite-combobox-item>
@@ -91,7 +91,7 @@
                         </calcite-label>
                         <calcite-label>
                             IWL Name(s)
-                            <calcite-combobox>
+                            <calcite-combobox selectionMode="single">
                                 <calcite-combobox-item value="Sample" text-label="Sample"></calcite-combobox-item>
                             </calcite-combobox>
                         </calcite-label>
@@ -105,13 +105,13 @@
                         </calcite-label>
                         <calcite-label>
                             Incident Start DateTime
-                            <calcite-input-date-picker></calcite-input>
-                            <calcite-input-time-picker></calcite-input>
+                            <calcite-input-date-picker></calcite-input-date-picker>
+                            <calcite-input-time-picker></calcite-input-time-picker>
                         </calcite-label>
                         <calcite-label>
                             Report DateTime
-                            <calcite-input-date-picker></calcite-input>
-                            <calcite-input-time-picker></calcite-input>
+                            <calcite-input-date-picker></calcite-input-date-picker>
+                            <calcite-input-time-picker></calcite-input-time-picker>
                         </calcite-label>
                         <calcite-label>
                             Threat Name
@@ -119,7 +119,7 @@
                         </calcite-label>
                         <calcite-label>
                             Status of Incident
-                            <calcite-combobox placeholder="Select weather type">
+                            <calcite-combobox selectionMode="single">
                                 <calcite-combobox-item value="Open" text-label="Open"></calcite-combobox-item>
                                 <calcite-combobox-item value="Sustained" text-label="Sustained"></calcite-combobox-item>
                                 <calcite-combobox-item value="Close" text-label="Close"></calcite-combobox-item>
