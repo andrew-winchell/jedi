@@ -52,6 +52,10 @@ calcite-panel {
     left: 173.3px;
 }
 
+form {
+    width: -webkit-fill-available;
+}
+
 .viewer {
     width: calc(50% - 64px);
     position: absolute;
