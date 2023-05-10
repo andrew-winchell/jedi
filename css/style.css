@@ -112,5 +112,6 @@ td {
 
 .form-container {
     overflow-y: auto;
+    overflow-x: hidden;
     height: -webkit-fill-available;
 }

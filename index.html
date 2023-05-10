@@ -161,7 +161,58 @@
                         </form>
                     </div>
                 </div>
-                <div id="module1-container" class="module-container"></div>
+                <div id="module1-container" class="module-container">
+                    <div class="form-container">
+                        <h2 style="padding-left: 25px;">
+                            New Incident
+                        </h2>
+                        <form>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <calcite-label>
+                                            Incident ID
+                                            <calcite-input placeholder="ATO-SI-2023-XX"></calcite-input>
+                                        </calcite-label>
+                                    </td>
+                                    <td>
+                                        <calcite-label>
+                                            Incident Name
+                                            <calcite-input placeholder="Example: Hurricane Hughes"></calcite-input>
+                                        </calcite-label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <calcite-label>
+                                            Incident Type
+                                            <calcite-combobox placeholder="Select weather type" selection-mode="single">
+                                                <calcite-combobox-item value="Tropical Cyclone" text-label="Tropical Cyclone"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Winter Storm" text-label="Winter Storm"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Flood" text-label="Flood"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Tornado" text-label="Tornado"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Wildfire" text-label="Wildfire"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Earthquake" text-label="Earthquake"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Tsunami" text-label="Tsunami"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Bio/Chemical" text-label="Bio/Chemical"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Volcano" text-label="Volcano"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Space Weather" text-label="Space Weather"></calcite-combobox-item>
+                                                <calcite-combobox-item value="Other" text-label="Other"></calcite-combobox-item>
+                                            </calcite-combobox>
+                                        </calcite-label></td>
+                                    <td>
+                                        <calcite-label>
+                                            IWL Name(s)
+                                            <calcite-combobox selection-mode="single">
+                                                <calcite-combobox-item value="Sample" text-label="Sample"></calcite-combobox-item>
+                                            </calcite-combobox>
+                                        </calcite-label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
                 <div id="module2-container" class="module-container"></div>
                 <div id="module3-container" class="module-container"></div>
                 <div id="module4-container" class="module-container"></div>
