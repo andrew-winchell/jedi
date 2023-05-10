@@ -33,7 +33,7 @@ require([
         for (const feature of results.features) {
             if (feature.attributes.incident_name != null) {
                 $("#incident-list").append(
-                    "<calcite-list-item label='" + feature.attributes.incident_name + "'></calcite-list-item>"
+                    "<calcite-list-item label='" + feature.attributes.incident_name + " value='" + feature.attributes.incident_name + "'></calcite-list-item>"
                 )
             }
         };
@@ -73,6 +73,6 @@ require([
 
     // select an incident
     $("#incident-list").on("click", (e) => {
-        console.log(e);
+        let incidentName = e.target.value;
     });
 })
