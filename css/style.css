@@ -17,8 +17,7 @@
 }
 
 #tab-container {
-    height: 60px;
-    position: sticky;
+    position: absolute;
     bottom: 0;
     overflow: auto;
     width: -webkit-fill-available;
