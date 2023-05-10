@@ -120,6 +120,7 @@ td {
     margin-left: auto;
     margin-right: auto;
     width: 200px;
+    padding-bottom: 10px;
 }
 
 #mode-container {
