@@ -37,36 +37,44 @@ $("#form-view-btn").on("click", (e) => {
 
 // Survey section header
 $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
-    let containers = $(".module-container");
-    console.log(containers);
+    $(".module-container").hide();
     let header = $("#survey-header")
     switch(e.target.value) {
         case "incident-details":
             header.html("JCAT Incident Details");
+            $("#incident-details-container").show();
             break;
         case "1":
             header.html("JCAT Key Takeaways");
+            $("#module1-container").show();
             break;
         case "2":
             header.html("JCAT Threats & Hazards Overview");
+            $("#module2-container").show();
             break;
         case "3":
             header.html("JCAT IWA/IWL Stats");
+            $("#module3-container").show();
             break;
         case "4":
             header.html("JCAT TFM Impacts and Outlook");
+            $("#module4-container").show();
             break;
         case "5":
             header.html("JCAT Operational Response Measures");
+            $("#module5-container").show();
             break;
         case "6":
             header.html("JCAT Response and Recovery Focus");
+            $("#module6-container").show();
             break;
         case "7":
             header.html("JCAT Key Response Nodes");
+            $("#module7-container").show();
             break;
         case "8":
             header.html("JCAT Approval");
+            $("#module8-container").show();
             break;
     }
 });
