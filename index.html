@@ -118,7 +118,7 @@
                                     <td>
                                         <calcite-label>
                                             Incident Locations
-                                            <calcite-input placeholder="Example: GOMEX; LA; TX"></calcite-input>
+                                            <calcite-input placeholder="Example: GOMEX; LA; TX" id="incident-locations"></calcite-input>
                                         </calcite-label>
                                     </td>
                                 </tr>
@@ -142,13 +142,13 @@
                                     <td>
                                         <calcite-label>
                                             Threat Name
-                                            <calcite-input placeholder="Example: Hurricane Hughes"></calcite-input>
+                                            <calcite-input placeholder="Example: Hurricane Hughes" id="threat-name"></calcite-input>
                                         </calcite-label>
                                     </td>
                                     <td>
                                         <calcite-label>
                                             Status of Incident
-                                            <calcite-combobox selection-mode="single">
+                                            <calcite-combobox selection-mode="single" id="incident-status">
                                                 <calcite-combobox-item value="Open" text-label="Open"></calcite-combobox-item>
                                                 <calcite-combobox-item value="Sustained" text-label="Sustained"></calcite-combobox-item>
                                                 <calcite-combobox-item value="Close" text-label="Close"></calcite-combobox-item>
