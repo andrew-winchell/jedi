@@ -71,14 +71,17 @@ require([
         };
     });
 
-    // select an incident
+    // select an incident and populate relevent data
     $("#incident-list").on("click", (e) => {
         let incidentName = e.target.label;
         let query = JCATMasterLayer.createQuery();
         query.where = "incident_name = '" + incidentName + "'";
         JCATMasterLayer.queryFeatures(query)
             .then((results) => {
-                console.log(results);
+                let feature = results.features[0];
+                $("#kt-incident-name")[0].append(feature.incident_name);
+                $("#kt-incident-id")[0].append(feature.incident);
+                $("#kt-report-id")[0].append(feature.report);
             })
     });
 })
