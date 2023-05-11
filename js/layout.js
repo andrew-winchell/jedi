@@ -38,6 +38,8 @@ $("#form-view-btn").on("click", (e) => {
 // Survey section header
 $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
     $(".module-container").hide();
+    $("#mode-container").hide();
+    $("#mode-expander").hide();
     let header = $("#survey-header")
     switch(e.target.value) {
         case "incident-details":
