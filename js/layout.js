@@ -95,5 +95,5 @@ $("#mode-expander").on("click", (e) => {
 });
 
 $("#key-takeaways-btn").on("click", (e) => {
-    $("#key-takeaways").append("<div draggable='true'><calcite-text-area max-length='250'></calcite-text-area></div>")
+    $("#key-takeaways").append("<div draggable='true'><calcite-input placeholder='Enter takeaway' max-length='250' type='textarea'></calcite-input></div>")
 })
