@@ -93,3 +93,7 @@ $("#mode-expander").on("click", (e) => {
         icon = "chevron-up";
     }
 });
+
+$("#key-takeaways-btn").on("click", (e) => {
+    $("#key-takeaways").append("<div draggable='true'><calcite-input></calcite-input></div>")
+})
