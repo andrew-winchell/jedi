@@ -45,6 +45,8 @@ $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
         case "incident-details":
             header.html("JCAT Incident Details");
             $("#incident-details-container").show();
+            $("#mode-container").show();
+            $("#mode-expander").show();
             break;
         case "1":
             header.html("JCAT Key Takeaways");
