@@ -101,6 +101,6 @@ require([
 
     $("#sub-incident-form").on("click", (e) => {
         let formValues;
-        console.log($("#sub-incident-form"))
+        console.log($("#incident-form"))
     })
 })
