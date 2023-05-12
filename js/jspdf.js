@@ -24,7 +24,7 @@ function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
-$("#incident-name").on("calciteInputChange", (input) => {
+$("#incident-name").on("calciteInputInput", (input) => {
     console.log(input);
     //createPDF(input);
 })
