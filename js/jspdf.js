@@ -23,3 +23,8 @@ function debugBase64 (base64string) {
 function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
+
+$("#incident-name").on("calciteInputChange", (input) => {
+    console.log(input);
+    //createPDF(input);
+})
