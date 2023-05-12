@@ -100,18 +100,3 @@ $("#key-takeaways-btn").on("click", (e) => {
 });
 
 // Drag key takeaway bullets
-function handleDragStart(e) {
-    this.style.opacity = '0.4';
-  }
-  
-  function handleDragEnd(e) {
-    this.style.opacity = '1';
-  }
-  
-  let items = $(".box");
-  console.log(items)
-  for(const item of items) {
-    console.log(item);
-    item.addEventListener('dragstart', handleDragStart);
-    item.addEventListener('dragend', handleDragEnd);
-  };
