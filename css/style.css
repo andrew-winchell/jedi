@@ -142,3 +142,8 @@ td {
 .takeaways {
     padding: 2.5px;
 }
+
+.draggable {
+    cursor: move;
+    user-select: none;
+}
