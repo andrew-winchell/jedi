@@ -98,11 +98,4 @@ require([
                 $("#kt-report-id").text(feature.attributes.report);
             })
     });
-
-    $.ajax({
-        url: "https://www.nhc.noaa.gov/nhc_at1.xml",
-        context: document.body
-    }).done((response) => {
-        console.log(response)
-    });
 })
