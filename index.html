@@ -135,13 +135,13 @@
                                     <td>
                                         <calcite-label>
                                             Incident Start DateTime
-                                            <input type="datetime-local"></input>
+                                            <input type="datetime-local" style="height: 32px;" id="incident-starttime"></input>
                                         </calcite-label>
                                     </td>
                                     <td>
                                         <calcite-label>
                                             Report DateTime
-                                            <input type="datetime-local"></input>
+                                            <input type="datetime-local" style="height: 32px;" id="report-starttime"></input>
                                         </calcite-label>
                                     </td>
                                 </tr>
@@ -191,7 +191,7 @@
                             Example: Hurrican Kopp remains a powerful storm impacting the NAS within the IWA. The storm has impacted the operation
                             of 9 ATM facilities (7 ATC ZERO and 2 ATC LIMITED), 72 ANS systems, and 9 airports.
                         </p>
-                        <calcite-button id="key-takeaways-btn" appearance="transparent" kind="neutral" icon-start="plus-square" style="padding: 10px;">Add a New Item</calcite-button>
+                        <calcite-button id="key-takeaways-btn" appearance="outline-fill" kind="inverse" icon-start="plus-square" style="padding: 10px;">Add a New Item</calcite-button>
                         <div id="key-takeaways">
                             <div draggable="true">
                                 <calcite-input placeholder="Enter takeaway" max-length="250" type="textarea" class="takeaways"></calcite-input>
