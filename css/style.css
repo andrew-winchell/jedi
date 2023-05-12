@@ -142,3 +142,7 @@ td {
 .takeaways {
     padding: 2.5px;
 }
+
+.box {
+    cursor: move;
+}

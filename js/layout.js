@@ -94,6 +94,22 @@ $("#mode-expander").on("click", (e) => {
     }
 });
 
+// Add new key takeaway bullets
 $("#key-takeaways-btn").on("click", (e) => {
     $("#key-takeaways").append("<div draggable='true'><calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways'></calcite-input></div>")
-})
+});
+
+// Drag key takeaway bullets
+function handleDragStart(e) {
+    this.style.opacity = '0.4';
+  }
+  
+  function handleDragEnd(e) {
+    this.style.opacity = '1';
+  }
+  
+  let items = $(".box");
+  items.forEach(function (item) {
+    item.addEventListener('dragstart', handleDragStart);
+    item.addEventListener('dragend', handleDragEnd);
+  });
