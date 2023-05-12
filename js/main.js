@@ -101,7 +101,7 @@ require([
 
     $("#sub-incident-form").on("click", (e) => {
         let formValues = [];
-        console.log($("#incident-type")[0])
+        console.log($("#incident-type"))
         formValues.push($("#incident-type")[0])
     })
 })
