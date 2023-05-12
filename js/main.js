@@ -100,7 +100,7 @@ require([
     });
 
     $("#sub-incident-form").on("click", (e) => {
-        let formValues = $("#incident-form").serializeArray();
-        console.log(formValues)
+        let formValues;
+        console.log($("#sub-incident-form"))
     })
 })
