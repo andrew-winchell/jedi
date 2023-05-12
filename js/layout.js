@@ -110,7 +110,7 @@ function handleDragStart(e) {
   
   let items = $(".box");
   console.log(items)
-  items.forEach(function (item) {
+  items.each((item) => {
     item.addEventListener('dragstart', handleDragStart);
     item.addEventListener('dragend', handleDragEnd);
   });
