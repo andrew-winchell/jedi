@@ -112,6 +112,6 @@ function handleDragStart(e) {
   console.log(items)
   for(const item of items) {
     console.log(item);
-    item.on('dragstart', handleDragStart);
-    item.on('dragend', handleDragEnd);
+    item.addEventListener('dragstart', handleDragStart);
+    item.addEventListener('dragend', handleDragEnd);
   };
