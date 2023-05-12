@@ -100,26 +100,3 @@ $("#key-takeaways-btn").on("click", (e) => {
 });
 
 // Drag key takeaway bullets
-let dragKT;
-let x = 0;
-let y = 0;
-
-const mouseDownHandler = function (e) {
-    dragKT = e.target;
-
-    // Calculate the mouse position
-    const rect = dragKT.getBoundingClientRect();
-    x = e.pageX - rect.left;
-    y = e.pageY - rect.top;
-
-    // Attach the listeners to `document`
-    document.addEventListener('mousemove', mouseMoveHandler);
-    document.addEventListener('mouseup', mouseUpHandler);
-};
-
-const mouseMoveHandler = function (e) {
-    // Set position for dragging element
-    dragKT.style.position = 'absolute';
-    dragKT.style.top = `${e.pageY - y}px`;
-    dragKT.style.left = `${e.pageX - x}px`;
-};

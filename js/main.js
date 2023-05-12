@@ -98,4 +98,9 @@ require([
                 $("#kt-report-id").text(feature.attributes.report);
             })
     });
+
+    $("#sub-incident-form").on("click", (e) => {
+        let formValues = $("#incident-form").serializeArray();
+        console.log(formValues)
+    })
 })
