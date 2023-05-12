@@ -142,11 +142,3 @@ td {
 .takeaways {
     padding: 2.5px;
 }
-
-.box {
-    cursor: move;
-}
-
-.box.over {
-    border: 3px dotted #666;
-  }
