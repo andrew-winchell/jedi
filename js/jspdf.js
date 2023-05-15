@@ -24,7 +24,23 @@ function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
-$("#incident-name").on("calciteInputInput", (input) => {
-    console.log(input);
+$("#incident-name").on("calciteInputChange", (input) => {
     //createPDF(input);
-})
+});
+
+function createPDF () {
+    const pdf = new jsPDF({
+        orientation: "portrait",
+        format: "letter"
+    });
+
+    delay(100).then(() => {
+
+
+
+
+        
+        let base64string = pdf.output("bloburl");
+        debugBase64(base64string);
+    });
+}
