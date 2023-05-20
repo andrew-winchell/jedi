@@ -1,3 +1,17 @@
+// Form Variables
+console.log($("#incident-id"))
+let incident_id;
+let incident_name;
+let incident_type;
+let iwl_names;
+let report_id;
+let incident_locs;
+let incident_start;
+let report_date;
+let threat_name;
+let incident_status;
+
+
 $("#refresh-iwl").on("click", () => {
         const pdf = new jsPDF({
             orientation: "portrait",
