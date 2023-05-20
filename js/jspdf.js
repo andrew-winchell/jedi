@@ -8,7 +8,7 @@ function pdfContent() {
 
         let refreshText = "";
         let incident_id, incident_name;
-        delay(100).then(() => { 
+        delay(1000).then(() => { 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
             pdf.text(incident_id + "\n" + incident_name, 20, 20);
