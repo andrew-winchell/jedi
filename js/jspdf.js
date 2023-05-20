@@ -1,5 +1,4 @@
 // Form Variables
-console.log($("#incident-id"))
 let incident_id;
 let incident_name;
 let incident_type;
@@ -10,7 +9,6 @@ let incident_start;
 let report_date;
 let threat_name;
 let incident_status;
-
 
 $("#refresh-iwl").on("click", () => {
         const pdf = new jsPDF({
@@ -39,7 +37,8 @@ function delay (time) {
 }
 
 $("#incident-name").on("calciteInputChange", (input) => {
-    //createPDF(input);
+    incident_id = input;
+    console.log(incident_id);
 });
 
 function createPDF () {
