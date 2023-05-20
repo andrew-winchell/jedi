@@ -36,8 +36,8 @@ function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
-$("#incident-name").on("calciteInputChange", (input) => {
-    incident_id = input;
+$("#incident-name").on("calciteInputInput", (input) => {
+    incident_id = input.target.value;
     console.log(incident_id);
 });
 
