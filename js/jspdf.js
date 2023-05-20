@@ -1,3 +1,5 @@
+export { pdfContent }
+
 function pdfContent() {
         const pdf = new jsPDF({
             orientation: "portrait",

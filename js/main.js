@@ -1,3 +1,5 @@
+import {pdfContent} from './jspdf.js'
+
 require([
     "esri/portal/Portal",
     "esri/identity/OAuthInfo",
