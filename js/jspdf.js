@@ -13,8 +13,8 @@ function pdfContent() {
             incident_name = $("#incident-name")[0].value;
             pdf.text(incident_id + "\n" + incident_name, 20, 20);
 
-            refreshText = $("#refresh-text")[0].textContent
-            pdf.text(refreshText, 12, 12);
+            //refreshText = $("#refresh-text")[0].textContent
+            //pdf.text(refreshText, 12, 12);
             pdf.addPage();
             pdf.text(20, 20, "The second page");
             
