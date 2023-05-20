@@ -1,32 +1,25 @@
-// Form Variables
-let incident_id;
-let incident_name;
-let incident_type;
-let iwl_names;
-let report_id;
-let incident_locs;
-let incident_start;
-let report_date;
-let threat_name;
-let incident_status;
-
-$("#refresh-iwl").on("click", () => {
+function pdfContent() {
         const pdf = new jsPDF({
             orientation: "portrait",
             format: "letter"
         });
 
         let refreshText = "";
-        delay(100).then(() => { 
+        let incident_id, incident_name;
+        delay(10).then(() => { 
+            incident_id = $("#incident-id")[0].value;
+            incident_name = $("#incident-name")[0].value;
+            pdf.text(incident_id + "\n" + incident_name, 20, 20);
+
             refreshText = $("#refresh-text")[0].textContent
-            pdf.text(refreshText, 20, 20);
+            pdf.text(refreshText, 12, 12);
             pdf.addPage();
             pdf.text(20, 20, "The second page");
             
             let base64string = pdf.output("bloburl");
             debugBase64(base64string);
         });
-});
+}
 
 function debugBase64 (base64string) {
     $("#pdf-viewer")[0].src = base64string
@@ -47,12 +40,7 @@ function createPDF () {
         format: "letter"
     });
 
-    delay(100).then(() => {
-
-
-
-
-        
+    delay(100).then(() => {        
         let base64string = pdf.output("bloburl");
         debugBase64(base64string);
     });

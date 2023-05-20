@@ -96,7 +96,8 @@ require([
                 $("#kt-incident-name").text(feature.attributes.incident_name);
                 $("#kt-incident-id").text(feature.attributes.incident);
                 $("#kt-report-id").text(feature.attributes.report);
-            })
+            });
+        pdfContent();
     });
 
     $("#sub-incident-form").on("click", (e) => {
