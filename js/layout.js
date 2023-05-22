@@ -100,5 +100,18 @@ $("#key-takeaways-btn").on("click", (e) => {
 });
 
 // Drag key takeaway bullets
-var listItems = Array.from($("#key-takeaways")[0].children)
-console.log(listItems);
+$(function() {
+    $("#key-takeaways").sortable({
+        update: function(event, ui) {
+            getIdsOfDivs();
+        }
+    });
+});
+
+function getIdsOfDivs() {
+    let values = [];
+    $(".listItemClass").each(function(index) {
+        values.push($(this).attr("id")
+                    .replace("takeawayNo", ""));
+    });
+}
