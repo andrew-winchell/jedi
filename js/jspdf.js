@@ -34,6 +34,16 @@ function pdfContent() {
                 { align: "left", baseline: "middle"}
             )
 
+            pdf.cell(
+                0.5,
+                1.75,
+                2,
+                0.5,
+                "Incident:",
+                1,
+                "left"
+            )
+
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
             //pdf.text(incident_id + "\n" + incident_name, 20, 20);
