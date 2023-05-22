@@ -110,7 +110,7 @@ $(() => {
 
 for (const ta in $("#key-takeaways")[0].children) {
     //ta.resizable();
-    console.log($("#key-takeaways")[0], ta)
+    console.log($(".listItemClass"), $(".listItemClass")[0])
 };
 
 function getIdsOfDivs() {
