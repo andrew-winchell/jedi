@@ -106,8 +106,12 @@ $(() => {
             update: (event, ui) => {
                 getIdsOfDivs();
             }
-        })
-        .resizeable();
+        });
+    $("#key-takeaways")
+        .resizeable({
+            maxWidth: "95%",
+            minWidth: "95%"
+        });
 
 });
 
