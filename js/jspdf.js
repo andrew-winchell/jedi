@@ -36,16 +36,11 @@ function pdfContent() {
 
             pdf.setFontSize(14);
             pdf.setTextColor(0, 0, 0);
-
-            pdf.table(
+            pdf.text(
                 0.5,
                 1.75,
-                [
-                    {"Inc":"Incident:"}
-                ],
-                [
-                    "incident"
-                ]
+                "Incident: " + incident_id + "&emsp;Report: " + report_id + "\n"
+                + "Incident Name: " + incident_name
             )
 
             incident_id = $("#incident-id")[0].value;
