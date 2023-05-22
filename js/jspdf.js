@@ -1,7 +1,13 @@
 export { pdfContent }
 
 // Disable default form submit
-let inputs = $("calcite-input")
+let inputs = [];
+for(const cal_in of $("calcite-input")) {
+    inputs.push(cal_in);
+};
+for (const cal_combo of $("calcite-combobox")) {
+    inputs.push(cal_combo);
+}
 console.log(inputs)
 
 
