@@ -43,8 +43,7 @@ function pdfContent() {
                 body: [
                     ["Incident:", incident_id, "Report:", report_id],
                     ["Incident Name:", incident_name, "Report DTG:"],
-                    ["Incident Type:", "Incident Start DTG"],
-                    ["Incident Locations:"]
+                    ["Incident Type:", "Incident Start DTG"]
                 ]
             });
 
