@@ -31,7 +31,7 @@ function pdfContent() {
                 "ATO Significant Incident SITREP",
                 0.75,
                 1.125,
-                { align: "left"}
+                { align: "left", baseline: "middle"}
             )
 
             incident_id = $("#incident-id")[0].value;
