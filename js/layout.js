@@ -101,19 +101,16 @@ $("#key-takeaways-btn").on("click", (e) => {
 
 // Drag key takeaway bullets
 $(() => {
-    $("#key-takeaways")
-        .sortable({
-            update: (event, ui) => {
-                getIdsOfDivs();
-            }
-        });
-    $("#key-takeaways")
-        .resizable({
-            maxWidth: "95%",
-            minWidth: "95%"
-        });
-
+    $("#key-takeaways").sortable({
+        update: (event, ui) => {
+            getIdsOfDivs();
+        }
+    });
 });
+
+for (const ta in $("key-takeaways")[0].children)) {
+    ta.resizable();
+};
 
 function getIdsOfDivs() {
     let values = [];
