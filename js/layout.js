@@ -109,7 +109,9 @@ $(() => {
 });
 
 for (const ta in $(".listItemClass")) {
-    ta.resizable();
+    //ta.resizable();
+    console.log(ta)
+    console.log($(".listItemClass"))
 };
 
 function getIdsOfDivs() {
