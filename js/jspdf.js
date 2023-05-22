@@ -1,5 +1,10 @@
 export { pdfContent }
 
+// Disable default form submit
+let inputs = $("calcite-input")
+console.log(inputs)
+
+
 function pdfContent() {
         const pdf = new jsPDF({
             orientation: "portrait",
