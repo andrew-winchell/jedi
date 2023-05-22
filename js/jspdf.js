@@ -24,8 +24,15 @@ function pdfContent() {
                 { align: "center" }
             )
             
-            pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.50, "header")
-
+            pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header")
+            pdf.setFontSize(16);
+            pdf.setTextColor(255, 255, 255);
+            pdf.text(
+                "ATO Significant Incident SITREP",
+                0.75,
+                0.75,
+                { align: "left"}
+            )
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
