@@ -108,7 +108,7 @@ $(() => {
             }
         });
     $("#key-takeaways")
-        .resizeable({
+        .resizable({
             maxWidth: "95%",
             minWidth: "95%"
         });
