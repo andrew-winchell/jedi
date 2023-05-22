@@ -108,19 +108,8 @@ require([
         console.log(formValues);
     });
 
-    $(document).on("keypress", (kp) => {
-        if (kp.keyCode == "13") {
-            console.log("Enter");
-            kp.preventDefault();
-            return false;
-        }
-    });
-    
     $("#incident-form").on("submit", (self) => {
         
         formValidation(self);
-    })
-    function formValidation(form) {
-        console.log(form);
-    }
+    });
 })
