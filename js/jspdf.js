@@ -42,6 +42,9 @@ function pdfContent() {
                 1.75,
                 [
                     {"Inc":"Incident:"}
+                ],
+                [
+                    {"Inc":"Incident"}
                 ]
             )
 
