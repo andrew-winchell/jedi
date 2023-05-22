@@ -117,7 +117,8 @@ for (const ta of $(".listItemClass")) {
 function getIdsOfDivs() {
     let values = [];
     $(".listItemClass").each(function(index) {
-        values.push($(this).attr("id")
-                    .replace("takeawayNo", ""));
+        values
+            .push($(this).attr("id")
+            .replace("takeawayNo", ""));
     });
 }
