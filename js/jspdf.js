@@ -37,7 +37,7 @@ function pdfContent() {
             pdf.setFontSize(14);
             pdf.setTextColor(0, 0, 0);
 
-            autoTable(pdf, {
+            pdf.autoTable({
                 body: [
                     ["Incident:", incident_id, "Report:", report_id],
                     ["Incident Name:", incident_name, "Report DTG:"],
