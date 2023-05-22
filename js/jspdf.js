@@ -9,6 +9,10 @@ function pdfContent() {
 
         let refreshText = "";
         let incident_id, incident_name;
+
+        var header = new Image();
+        header.src = "media/pdf_header.png";
+
         delay(1000).then(() => { 
 
             pdf.setFontSize(12);
@@ -16,9 +20,11 @@ function pdfContent() {
             pdf.text(
                 "FOR OFFICIAL USE ONLY",
                 4.25,
-                0.25,
+                0.50,
                 { align: "center" }
             )
+            
+            pdf.addImage(header, "png", 0.5, 1, 7.5, 1, "header")
 
 
             incident_id = $("#incident-id")[0].value;
