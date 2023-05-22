@@ -14,6 +14,8 @@ function pdfContent() {
             pdf.setTextColor(255, 0, 0);
             pdf.text(
                 "FOR OFFICIAL USE ONLY",
+                20,
+                20,
                 {
                     align: "center"
                 }
@@ -22,7 +24,7 @@ function pdfContent() {
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
-            pdf.text(incident_id + "\n" + incident_name, 20, 20);
+            //pdf.text(incident_id + "\n" + incident_name, 20, 20);
 
             //refreshText = $("#refresh-text")[0].textContent
             //pdf.text(refreshText, 12, 12);
