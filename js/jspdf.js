@@ -8,7 +8,7 @@ function pdfContent() {
         });
 
         let refreshText = "";
-        let incident_id, incident_name;
+        let incident_id, incident_name, report_id;
 
         var header = new Image();
         header.src = "media/pdf_header.png";
@@ -37,10 +37,14 @@ function pdfContent() {
             pdf.setFontSize(14);
             pdf.setTextColor(0, 0, 0);
 
-            pdf.table(
-                0.5,
-                1.75,
-            );
+            autoTable(pdf, {
+                body: [
+                    ["Incident:", incident_id, "Report:", report_id],
+                    ["Incident Name:", incident_name, "Report DTG:"],
+                    ["Incident Type:", "Incident Start DTG"],
+                    ["Incident Locations:"]
+                ]
+            });
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
