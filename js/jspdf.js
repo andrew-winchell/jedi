@@ -12,6 +12,7 @@ for (const box of inputs) {
     $(box).keypress((evt) => {
         if (evt.which == "13") {
             evt.preventDefault();
+            console.log("Submit Disabled")
         }
     })
 };
