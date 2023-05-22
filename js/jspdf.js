@@ -1,6 +1,6 @@
 export { pdfContent }
 
-import 'jspdf-autotable'
+import autoTable from './lib/jspdf-autotable'
 
 function pdfContent() {
         const pdf = new jsPDF({
@@ -39,7 +39,7 @@ function pdfContent() {
             pdf.setFontSize(14);
             pdf.setTextColor(0, 0, 0);
 
-            pdf.autoTable({
+            autoTable(pdf, {
                 body: [
                     ["Incident:", incident_id, "Report:", report_id],
                     ["Incident Name:", incident_name, "Report DTG:"],
