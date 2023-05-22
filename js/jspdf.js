@@ -1,7 +1,5 @@
 export { pdfContent }
 
-import autoTable from '../lib/jspdf.plugin.autotable'
-
 function pdfContent() {
         const pdf = new jsPDF({
             orientation: "portrait",
@@ -38,14 +36,6 @@ function pdfContent() {
 
             pdf.setFontSize(14);
             pdf.setTextColor(0, 0, 0);
-
-            autoTable(pdf, {
-                body: [
-                    ["Incident:", incident_id, "Report:", report_id],
-                    ["Incident Name:", incident_name, "Report DTG:"],
-                    ["Incident Type:", "Incident Start DTG"]
-                ]
-            });
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
