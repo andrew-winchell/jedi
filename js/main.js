@@ -109,8 +109,7 @@ require([
     });
 
     $(document).on("keypress", (kp) => {
-        console.log(kp);
-        if (kp == "13") {
+        if (kp.keyCode == "13") {
             console.log("Enter")
         }
     })
