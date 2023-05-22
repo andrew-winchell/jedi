@@ -108,7 +108,14 @@ require([
         console.log(formValues);
     });
 
+    $(document).on("keypress", (kp) => {
+        console.log(kp);
+        if (kp == "13") {
+            console.log("Enter")
+        }
+    })
     $("#incident-form").on("submit", (self) => {
+        
         formValidation(self);
     })
     function formValidation(form) {
