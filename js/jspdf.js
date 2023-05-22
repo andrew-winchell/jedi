@@ -9,6 +9,19 @@ function pdfContent() {
         let refreshText = "";
         let incident_id, incident_name;
         delay(1000).then(() => { 
+
+            pdf.setFontSize(12);
+            pdf.setTextColor(255, 0, 0);
+            pdf.text(
+                "FOR OFFICIAL USE ONLY",
+                20,
+                20,
+                {
+                    align: "center"
+                }
+            )
+
+
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
             pdf.text(incident_id + "\n" + incident_name, 20, 20);
