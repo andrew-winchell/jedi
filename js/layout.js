@@ -100,3 +100,5 @@ $("#key-takeaways-btn").on("click", (e) => {
 });
 
 // Drag key takeaway bullets
+var listItems = Array.from($("#key-takeaways"))
+console.log(listItems);
