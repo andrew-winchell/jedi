@@ -49,7 +49,10 @@ function pdfContent() {
 
             pdf.table(
                 0.5,
-                1.75
+                1.75,
+                {
+                    "Incident":"Incident:",
+                    "Report":"Report:"
             );
 
             incident_id = $("#incident-id")[0].value;
