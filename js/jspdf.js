@@ -44,7 +44,7 @@ function pdfContent() {
                     {"Inc":"Incident:"}
                 ],
                 [
-                    {"Inc":"Incident"}
+                    "incident"
                 ]
             )
 
