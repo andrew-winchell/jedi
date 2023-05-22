@@ -7,8 +7,14 @@ for(const cal_in of $("calcite-input")) {
 };
 for (const cal_combo of $("calcite-combobox")) {
     inputs.push(cal_combo);
-}
-console.log(inputs)
+};
+for (const box of inputs) {
+    $(box).keypress((evt) => {
+        if (evt.which == "13") {
+            evt.preventDefault();
+        }
+    })
+};
 
 
 function pdfContent() {
