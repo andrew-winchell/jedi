@@ -1,5 +1,7 @@
 export { pdfContent }
 
+import 'jspdf-autotable'
+
 function pdfContent() {
         const pdf = new jsPDF({
             orientation: "portrait",
