@@ -108,7 +108,7 @@ $(() => {
     });
 });
 
-for (const ta in $(".listItemClass")[0].children) {
+for (const ta in $(".listItemClass")) {
     ta.resizable();
 };
 
