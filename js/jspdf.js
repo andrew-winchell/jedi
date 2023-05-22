@@ -39,7 +39,7 @@ function pdfContent() {
             pdf.text(
                 0.5,
                 2,
-                "Incident: " + incident_id + "&emsp;" + "Report: " + report_id + "\n"
+                "Incident: " + incident_id + "      Report: " + report_id + "\n"
                 + "Incident Name: " + incident_name
             )
 
