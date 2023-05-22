@@ -1,23 +1,5 @@
 export { pdfContent }
 
-// Disable default form submit
-let inputs = [];
-for(const cal_in of $("calcite-input")) {
-    inputs.push(cal_in);
-};
-for (const cal_combo of $("calcite-combobox")) {
-    inputs.push(cal_combo);
-};
-for (const box of inputs) {
-    $(box).keypress((evt) => {
-        if (evt.which == "13") {
-            evt.preventDefault();
-            console.log("Submit Disabled")
-        }
-    })
-};
-
-
 function pdfContent() {
         const pdf = new jsPDF({
             orientation: "portrait",

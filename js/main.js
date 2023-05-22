@@ -106,5 +106,12 @@ require([
         let formValues = [];
         formValues.push($("#incident-type")[0].value);
         console.log(formValues);
+    });
+
+    $("#incident-form").on("submit", (self) => {
+        formValidation(self);
     })
+    function formValidation(form) {
+        console.log(form);
+    }
 })
