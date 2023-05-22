@@ -100,12 +100,15 @@ $("#key-takeaways-btn").on("click", (e) => {
 });
 
 // Drag key takeaway bullets
-$(function() {
-    $("#key-takeaways").sortable({
-        update: function(event, ui) {
-            getIdsOfDivs();
-        }
-    });
+$(() => {
+    $("#key-takeaways")
+        .sortable({
+            update: (event, ui) => {
+                getIdsOfDivs();
+            }
+        })
+        .resizeable();
+
 });
 
 function getIdsOfDivs() {
