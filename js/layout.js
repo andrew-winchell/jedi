@@ -109,7 +109,8 @@ $(() => {
 });
 
 for (const ta in $("#key-takeaways")[0].children) {
-    ta.resizable();
+    //ta.resizable();
+    console.log($("#key-takeaways")[0], ta)
 };
 
 function getIdsOfDivs() {
