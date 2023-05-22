@@ -14,8 +14,6 @@ function pdfContent() {
             pdf.setTextColor(255, 0, 0);
             pdf.text(
                 "FOR OFFICIAL USE ONLY",
-                20,
-                20,
                 {
                     align: "center"
                 }
