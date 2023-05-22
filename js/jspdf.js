@@ -35,15 +35,3 @@ $("#incident-name").on("calciteInputInput", (input) => {
     incident_id = input.target.value;
     console.log(incident_id);
 });
-
-function createPDF () {
-    const pdf = new jsPDF({
-        orientation: "portrait",
-        format: "letter"
-    });
-
-    delay(100).then(() => {        
-        let base64string = pdf.output("bloburl");
-        debugBase64(base64string);
-    });
-}
