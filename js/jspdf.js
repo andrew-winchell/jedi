@@ -25,12 +25,12 @@ function pdfContent() {
             )
             
             pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header")
-            pdf.setFontSize(16);
+            pdf.setFontSize(18);
             pdf.setTextColor(255, 255, 255);
             pdf.text(
                 "ATO Significant Incident SITREP",
                 0.75,
-                0.75,
+                1.125,
                 { align: "left"}
             )
 
