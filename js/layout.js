@@ -108,9 +108,8 @@ $(() => {
     });
 });
 
-for (const ta in $("#key-takeaways")[0].children) {
-    //ta.resizable();
-    console.log($(".listItemClass"), $(".listItemClass")[0])
+for (const ta in $(".listItemClass")[0].children) {
+    ta.resizable();
 };
 
 function getIdsOfDivs() {
