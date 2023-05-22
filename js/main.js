@@ -110,9 +110,12 @@ require([
 
     $(document).on("keypress", (kp) => {
         if (kp.keyCode == "13") {
-            console.log("Enter")
+            console.log("Enter");
+            kp.preventDefault();
+            return false;
         }
-    })
+    });
+    
     $("#incident-form").on("submit", (self) => {
         
         formValidation(self);
