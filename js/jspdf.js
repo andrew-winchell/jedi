@@ -53,6 +53,7 @@ function pdfContent() {
                 {
                     "Incident":"Incident:",
                     "Report":"Report:"
+                }
             );
 
             incident_id = $("#incident-id")[0].value;
