@@ -36,22 +36,22 @@ function pdfContent() {
 
             pdf.setFontSize(14);
             pdf.setTextColor(0, 0, 0);
-            pdf.cell(
+            
+            let mod0Data = [
+                {"Incident": "Incident:"},
+                {"Report": "Report:"},
+                {"IncidentName": "Incident Name:"},
+                {"ReportDTG": "Report DTG:"},
+                {"IncidentType": "Incident Type:"},
+                {"IncStartDTG": "Incident Start DTG:"},
+                {"IncidentLoc": "Incident Locations:"}
+            ];
+
+            pdf.table(
                 0.5,
                 1.75,
-                2,
-                0.5,
-                "Incident:",
-                "left"
-            )
-            pdf.cell(
-                0.5,
-                2.25,
-                2,
-                0.5,
-                "Incident Name:",
-                "left"
-            )
+                mod0Data
+            );
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
