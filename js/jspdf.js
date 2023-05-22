@@ -24,7 +24,7 @@ function pdfContent() {
                 { align: "center" }
             )
             
-            pdf.addImage(header, "png", 0.5, 1, 7.5, 1, "header")
+            pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.50, "header")
 
 
             incident_id = $("#incident-id")[0].value;
