@@ -108,7 +108,7 @@ $(() => {
     });
 });
 
-for (const ta in $("key-takeaways")[0].children)) {
+for (const ta in $("key-takeaways")[0].children) {
     ta.resizable();
 };
 
