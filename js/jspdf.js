@@ -3,7 +3,8 @@ export { pdfContent }
 function pdfContent() {
         const pdf = new jsPDF({
             orientation: "portrait",
-            format: "letter"
+            format: "letter",
+            unit: "in"
         });
 
         let refreshText = "";
@@ -14,11 +15,9 @@ function pdfContent() {
             pdf.setTextColor(255, 0, 0);
             pdf.text(
                 "FOR OFFICIAL USE ONLY",
-                20,
-                20,
-                {
-                    align: "center"
-                }
+                4.25,
+                0.25,
+                { align: "center" }
             )
 
 
