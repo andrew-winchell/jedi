@@ -72,7 +72,7 @@ function pdfContent() {
                 { align: "left", baseline: "bottom", lineHeightFactor: 2 }
             );
 
-            pdf.setTextColor(195, 195, 195);     
+            pdf.setTextColor(150, 150, 150);     
             pdf.text(
                 0.55,
                 3.95,
