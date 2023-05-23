@@ -93,7 +93,7 @@ function pdfContent() {
             pdf.setTextColor(90, 148, 242);
 
             autoTable(pdf, {
-                header: ["1. Key Takeaways"],
+                head: ["1. Key Takeaways"],
                 body: keyTakeaways(),
                 startY: 3.55,
                 theme: "plain"
@@ -123,7 +123,10 @@ function delay (time) {
 }
 
 function keyTakeaways () {
-    let bullets = ["Takeaway 1", "Takeaway 2"];
+    let bullets = [
+        ["Takeaway 1"], 
+        ["Takeaway 2"]
+    ];
     return bullets;
 }
 
