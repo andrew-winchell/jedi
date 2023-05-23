@@ -103,7 +103,7 @@ function pdfContent() {
                     ['Test'],
                     ['Again']
                 ],
-                startY: 3.65
+                startY: 3.75
             });
 
             incident_id = $("#incident-id")[0].value;
