@@ -25,7 +25,10 @@ function pdfContent() {
             report_dtg = $("#report-starttime")[0].value;
 
             autoTable(pdf, {
-
+                body: [
+                    ['Test', 'Sample', '1'],
+                    ['Again', 'Attempt', '3']
+                ]
             })
 
             headerFooter(pdf);
