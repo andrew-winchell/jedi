@@ -13,10 +13,10 @@ function pdfContent() {
         var header = new Image();
         header.src = "media/pdf_header.png";
 
-        delay(500).then(() => { 
+        delay(1000).then(() => { 
 
             incident_id = $("#incident-id")[0].value;
-            incident_name = pdf.splitTextToSize($("#incident-name")[0].value, 2);
+            incident_name = $("#incident-name")[0].value;
             incident_type = $("#incident-type")[0].value;
             incident_locs = $("#incident-locations")[0].value;
             incident_dtg = $("#incident-starttime")[0].value;
@@ -70,7 +70,7 @@ function pdfContent() {
                 incident_name + "\n" +
                 incident_type + "\n" +
                 incident_locs + "\n",
-                { align: "left", baseline: "bottom", lineHeightFactor: 1.75, maxWidth: 2.10 }
+                { align: "left", baseline: "bottom", lineHeightFactor: 1.75 }
             );
             pdf.text(
                 5.80,
@@ -78,7 +78,7 @@ function pdfContent() {
                 report_id + "\n" +
                 report_dtg + "\n" +
                 incident_dtg + "\n",
-                { align: "left", baseline: "bottom", lineHeightFactor: 2, maxWidth: 2.10 }
+                { align: "left", baseline: "bottom", lineHeightFactor: 2 }
             );
 
             pdf.setTextColor(150, 150, 150);     
