@@ -70,7 +70,7 @@ function pdfContent() {
                 incident_name + "\n" +
                 incident_type + "\n" +
                 incident_locs + "\n",
-                { align: "left", baseline: "bottom", lineHeightFactor: 1.75 }
+                { align: "left", baseline: "bottom", lineHeightFactor: 1.75, maxWidth: 2.10}
             );
             pdf.text(
                 5.80,
