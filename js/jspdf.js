@@ -115,11 +115,16 @@ function pdfContent() {
 }
 
 function debugBase64 (base64string) {
-    $("#pdf-viewer")[0].src = base64string
+    $("#pdf-viewer")[0].src = base64string;
 }
 
 function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
+}
+
+function keyTakeaways () {
+    let bullets = ["Takeaway 1", "Takeaway 2"];
+    return bullets;
 }
 
 function headerFooter (pdf) {
