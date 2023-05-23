@@ -55,7 +55,7 @@ function pdfContent() {
 
             pdf.setTextColor(0, 0, 0);     
             pdf.text(
-                2.35,
+                2.10,
                 2,
                 incident_id + "\n" +
                 incident_name + "\n" +
@@ -64,7 +64,7 @@ function pdfContent() {
                 { align: "left", baseline: "bottom", lineHeightFactor: 1.75 }
             );
             pdf.text(
-                6.05,
+                5.80,
                 2,
                 report_id + "\n" +
                 report_dtg + "\n" +
@@ -79,6 +79,15 @@ function pdfContent() {
                 "Last Updated: ",
                 { align: "left", baseline: "bottom"}
             );
+
+            pdf.rect(0.5, 4, 7.5, 10);
+            pdf.setTextColor(90, 148, 242);
+            pdf.text(
+                0.55,
+                4.05,
+                "1. Key Takeaways",
+                { align: "left", baseline: "bottom"}
+            )
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
