@@ -1,4 +1,4 @@
-import autoTable from "../lib/jspdf-autotable"
+import "jspdf-autotable"
 export { pdfContent }
 
 function pdfContent() {
