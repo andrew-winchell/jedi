@@ -16,7 +16,7 @@ function pdfContent() {
         delay(500).then(() => { 
 
             incident_id = $("#incident-id")[0].value;
-            incident_name = $("#incident-name")[0].value;
+            incident_name = pdf.splitTextToSize($("#incident-name")[0].value, 2);
             incident_type = $("#incident-type")[0].value;
             incident_locs = $("#incident-locations")[0].value;
             incident_dtg = $("#incident-starttime")[0].value;
