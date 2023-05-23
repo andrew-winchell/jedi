@@ -23,6 +23,9 @@ function pdfContent() {
             report_id = $("#report-id")[0].value;
             report_dtg = $("#report-starttime")[0].value;
 
+            autoTable(pdf, {
+                
+            })
 
             headerFooter(pdf);
             
