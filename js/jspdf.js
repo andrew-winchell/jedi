@@ -54,7 +54,7 @@ function pdfContent() {
                 1.75,
                 1.875,
                 0.5,
-                "",
+                "test",
                 1
             );
             pdf.cell(
@@ -70,7 +70,7 @@ function pdfContent() {
                 1.75,
                 1.875,
                 0.5,
-                "",
+                "test",
                 1
             );
 
