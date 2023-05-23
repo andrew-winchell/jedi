@@ -1,4 +1,3 @@
-import "jspdf-autotable"
 export { pdfContent }
 
 function pdfContent() {
@@ -17,6 +16,8 @@ function pdfContent() {
         delay(1000).then(() => { 
 
             headerFooter(pdf);
+
+            pdf.autoTable()
             
             pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
             pdf.setFontSize(20);
