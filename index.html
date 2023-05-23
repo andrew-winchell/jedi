@@ -288,5 +288,10 @@
         <script src="js/layout.js"></script>
         <script type="module" src="js/jspdf.js"></script>
         <script type="module" src="js/main.js"></script>
+        <script>
+            var doc = new jsPDF()
+            doc.autoTable({ html: '#my-table' })
+            doc.save('table.pdf')
+          </script>
     </body>
 </html>
