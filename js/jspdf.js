@@ -1,4 +1,5 @@
 export { pdfContent }
+import autoTable from "../lib/jspdf.plugin.autotable.mjs";
 
 function pdfContent() {
         const pdf = new jsPDF({
