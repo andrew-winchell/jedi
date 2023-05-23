@@ -89,13 +89,12 @@ function pdfContent() {
                 { align: "left", baseline: "bottom"}
             );
 
-            pdf.rect(0.5, 3.5, 7.5, 10);
             pdf.setTextColor(90, 148, 242);
 
             autoTable(pdf, {
-                head: ["1. Key Takeaways"],
+                head: [["1. Key Takeaways"]],
                 body: keyTakeaways(),
-                startY: 3.55,
+                startY: 3.50,
                 theme: "plain"
             });
 
