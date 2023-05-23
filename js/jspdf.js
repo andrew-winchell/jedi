@@ -8,7 +8,7 @@ function pdfContent() {
         });
 
         let refreshText = "";
-        let incident_id, incident_name, report_id;
+        let incident_id, incident_name, incident_type, incident_locs, report_id, report_dtg, incident_dtg;
 
         var header = new Image();
         header.src = "media/pdf_header.png";
@@ -57,18 +57,18 @@ function pdfContent() {
             pdf.text(
                 2.35,
                 2,
-                "Incident:\n" +
-                "Incident Name:\n" +
-                "Incident Type:\n" +
-                "Incident Locations:\n",
+                incident_id + "\n" +
+                incident_name + "\n" +
+                incident_type + "\n" +
+                incident_locs + "\n",
                 { align: "left", baseline: "bottom", lineHeightFactor: 1.75 }
             );
             pdf.text(
                 6.05,
                 2,
-                "Report:\n" +
-                "Report DTG:\n" +
-                "Incident Start DTG:\n",
+                report_id + "\n" +
+                report_dtg + "\n" +
+                incident_dtg + "\n",
                 { align: "left", baseline: "bottom", lineHeightFactor: 2 }
             );
 
