@@ -91,19 +91,12 @@ function pdfContent() {
 
             pdf.rect(0.5, 3.5, 7.5, 10);
             pdf.setTextColor(90, 148, 242);
-            pdf.text(
-                0.55,
-                3.55,
-                "1. Key Takeaways",
-                { align: "left", baseline: "top"}
-            )
 
             autoTable(pdf, {
-                body: [
-                    ['Test'],
-                    ['Again']
-                ],
-                startY: 3.75
+                header: ["1. Key Takeaways"],
+                body: keyTakeaways(),
+                startY: 3.55,
+                theme: "plain"
             });
 
             incident_id = $("#incident-id")[0].value;
