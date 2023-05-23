@@ -15,6 +15,8 @@ function pdfContent() {
 
         delay(1000).then(() => { 
 
+            incident_id = $("#incident-id")[0].value;
+
             headerFooter(pdf);
             
             pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
