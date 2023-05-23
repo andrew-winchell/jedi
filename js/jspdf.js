@@ -1,4 +1,5 @@
 export { pdfContent }
+import autoTable from 'jspdf-autotable'
 
 function pdfContent() {
         const pdf = new jsPDF({
@@ -24,7 +25,7 @@ function pdfContent() {
             report_dtg = $("#report-starttime")[0].value;
 
             autoTable(pdf, {
-                
+
             })
 
             headerFooter(pdf);
