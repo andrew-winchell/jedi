@@ -89,11 +89,11 @@ function pdfContent() {
                 { align: "left", baseline: "bottom"}
             );
 
-            pdf.rect(0.5, 3.25, 7.5, 10);
+            pdf.rect(0.5, 3.5, 7.5, 10);
             pdf.setTextColor(90, 148, 242);
             pdf.text(
                 0.55,
-                3.80,
+                3.55,
                 "1. Key Takeaways",
                 { align: "left", baseline: "top"}
             )
