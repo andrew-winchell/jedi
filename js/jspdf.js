@@ -40,6 +40,7 @@ function pdfContent() {
             pdf.setLineWidth(0.01);
             pdf.rect(0.5, 1.75, 7.5, 3);
 
+            pdf.setFontSize(12);
             
             // Cell 1:1
             pdf.cell(0.5, 1.75, 1.875, 0.5, "Incident:", 1, "left");
