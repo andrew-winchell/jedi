@@ -48,9 +48,9 @@ function pdfContent() {
             // Cell 1:3
             pdf.cell(0.5, 1.75, 1.875, 0.5, "Report:", 1, "left");
             // Cell 1:4
-            pdf.cell(0.5, 1.75, 1.875, 0.5, "test", 1, "left");
+            pdf.cell(0.5, 1.75, 1.875, 0.5, "test", 1, "left");/*
             // Cell 2:1
-            pdf.cell(0.5, 2.25, 1.875, 0.5, "Incident:", 2, "left");/*
+            pdf.cell(0.5, 2.25, 1.875, 0.5, "Incident:", 2, "left");
             // Cell 2:2
             pdf.cell(0.5, 2.25, 1.875, 0.5, "test", 2, "left");
             // Cell 2:3
