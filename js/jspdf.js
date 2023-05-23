@@ -41,38 +41,34 @@ function pdfContent() {
             pdf.rect(0.5, 1.75, 7.5, 3);
 
             pdf.setLineWidth(0);
-            pdf.cell(
-                0.5,
-                1.75,
-                1.875,
-                0.5,
-                "Incident:",
-                1
-            );
-            pdf.cell(
-                0.5,
-                1.75,
-                1.875,
-                0.5,
-                "test",
-                1
-            );
-            pdf.cell(
-                0.5,
-                1.75,
-                1.875,
-                0.5,
-                "Report:",
-                1
-            );
-            pdf.cell(
-                0.5,
-                1.75,
-                1.875,
-                0.5,
-                "test",
-                1
-            );
+            // Cell 1:1
+            pdf.cell(0.5, 1.75, 1.875, 0.5, "Incident:", 1);
+            // Cell 1:2
+            pdf.cell(0.5, 1.75, 1.875, 0.5, "test", 1);
+            // Cell 1:3
+            pdf.cell(0.5, 1.75, 1.875, 0.5, "Report:", 1);
+            // Cell 1:4
+            pdf.cell(0.5, 1.75, 1.875, 0.5, "test", 1);
+            // Cell 2:1
+            pdf.cell(0.5, 2.25, 1.875, 0.5, "Incident:", 1);
+            // Cell 2:2
+            pdf.cell(0.5, 2.25, 1.875, 0.5, "test", 1);
+            // Cell 2:3
+            pdf.cell(0.5, 2.25, 1.875, 0.5, "Report:", 1);
+            // Cell 2:4
+            pdf.cell(0.5, 2.25, 1.875, 0.5, "test", 1);
+            // Cell 3:1
+            pdf.cell(0.5, 2.75, 1.875, 0.5, "Incident:", 1);
+            // Cell 3:2
+            pdf.cell(0.5, 2.75, 1.875, 0.5, "test", 1);
+            // Cell 3:3
+            pdf.cell(0.5, 2.75, 1.875, 0.5, "Report:", 1);
+            // Cell 3:4
+            pdf.cell(0.5, 2.75, 1.875, 0.5, "test", 1);
+            // Cell 4:1
+            pdf.cell(0.5, 3.25, 1.875, 0.5, "Incident:", 1);
+            // Cell 4:2
+            pdf.cell(0.5, 3.25, 1.875, 0.5, "test", 1);
 
             /*pdf.text(
                 0.5,
