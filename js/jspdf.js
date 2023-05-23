@@ -24,13 +24,6 @@ function pdfContent() {
             report_id = $("#report-id")[0].value;
             report_dtg = $("#report-starttime")[0].value;
 
-            autoTable(pdf, {
-                body: [
-                    ['Test'],
-                    ['Again']
-                ]
-            });
-
             headerFooter(pdf);
             
             pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
@@ -104,6 +97,14 @@ function pdfContent() {
                 "1. Key Takeaways",
                 { align: "left", baseline: "top"}
             )
+
+            autoTable(pdf, {
+                body: [
+                    ['Test'],
+                    ['Again']
+                ],
+                startY: 3.65
+            });
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
