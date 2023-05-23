@@ -31,7 +31,7 @@ function pdfContent() {
                 "ATO Significant Incident SITREP",
                 0.75,
                 1.125,
-                { align: "left", baseline: "middle"}
+                { align: "left", baseline: "middle" }
             );
 
             pdf.setFontSize(14);
