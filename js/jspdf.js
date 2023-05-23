@@ -102,14 +102,14 @@ function headerFooter (pdf) {
     pdf.text(
         "FOR OFFICIAL USE ONLY",
         4.25,
-        0.50,
+        0.25,
         { align: "center", baseline: "middle" }
     );
     // Footer
     pdf.text(
         "FOR OFFICIAL USE ONLY",
         4.25,
-        10.5,
+        10.75,
         { align: "center", baseline: "middle" }
     );
     
