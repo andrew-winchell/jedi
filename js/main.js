@@ -109,7 +109,6 @@ require([
     });
 
     $("#incident-form").on("submit", (self) => {
-        
         formValidation(self);
     });
 })
