@@ -1,4 +1,4 @@
-import {pdfContent} from './jspdf.js'
+import { pdfContent } from './jspdf.js'
 
 require([
     "esri/portal/Portal",
