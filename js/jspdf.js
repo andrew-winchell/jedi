@@ -17,7 +17,14 @@ function pdfContent() {
 
             headerFooter(pdf);
 
-            pdf.autoTable()
+            autoTable(pdf, {
+                head: [['Name', 'Email', 'Country']],
+                body: [
+                  ['David', 'david@example.com', 'Sweden'],
+                  ['Castille', 'castille@example.com', 'Spain'],
+                  // ...
+                ],
+            })
             
             pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
             pdf.setFontSize(20);
