@@ -31,11 +31,10 @@ function pdfContent() {
             pdf.setTextColor(0, 0, 0);
 
             pdf.setLineWidth(0.01);
-            pdf.rect(0.5, 1.75, 7.5, 3);
+            pdf.rect(0.5, 1.75, 7.5, 1.75);
 
             pdf.setFontSize(12);
-            pdf.setTextColor(90, 148, 242);    
-
+            pdf.setTextColor(90, 148, 242);
             pdf.text(
                 0.55,
                 2,
@@ -54,7 +53,32 @@ function pdfContent() {
                 { align: "left", baseline: "bottom", lineHeightFactor: 2 }
             );
 
-            pdf.setTextColor(0, 0, 0); 
+            pdf.setTextColor(0, 0, 0);     
+            pdf.text(
+                2.35,
+                2,
+                "Incident:\n" +
+                "Incident Name:\n" +
+                "Incident Type:\n" +
+                "Incident Locations:\n",
+                { align: "left", baseline: "bottom", lineHeightFactor: 1.75 }
+            );
+            pdf.text(
+                6.05,
+                2,
+                "Report:\n" +
+                "Report DTG:\n" +
+                "Incident Start DTG:\n",
+                { align: "left", baseline: "bottom", lineHeightFactor: 2 }
+            );
+
+            pdf.setTextColor(195, 195, 195);     
+            pdf.text(
+                0.55,
+                3.95,
+                "Last Updated: ",
+                { align: "left", baseline: "bottom"}
+            );
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
