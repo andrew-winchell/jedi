@@ -43,7 +43,7 @@ function pdfContent() {
                 "Incident Name:\n" +
                 "Incident Type:\n" +
                 "Incident Locations:\n",
-                { align: "left", baseline: "bottom", lineHeightFactor: 1.25 }
+                { align: "left", baseline: "bottom", lineHeightFactor: 1.75 }
             );
             pdf.text(
                 4.30,
@@ -51,7 +51,7 @@ function pdfContent() {
                 "Report:\n" +
                 "Report DTG:\n" +
                 "Incident Start DTG:\n",
-                { align: "left", baseline: "bottom", lineHeightFactor: 1.5 }
+                { align: "left", baseline: "bottom", lineHeightFactor: 2 }
             );
 
             pdf.setTextColor(0, 0, 0); 
