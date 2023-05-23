@@ -96,7 +96,9 @@ function pdfContent() {
                 body: keyTakeaways(incident_id),
                 startY: 3.50,
                 theme: "plain",
-                tableLineWidth: 0.05
+                tableLineWidth: 0.01,
+                tableLineColor: 0,
+                margin: 0
             });
 
             incident_id = $("#incident-id")[0].value;
