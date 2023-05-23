@@ -75,7 +75,7 @@ function pdfContent() {
             pdf.setTextColor(150, 150, 150);     
             pdf.text(
                 0.55,
-                3.95,
+                2.20,
                 "Last Updated: ",
                 { align: "left", baseline: "bottom"}
             );
