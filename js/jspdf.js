@@ -34,43 +34,27 @@ function pdfContent() {
             pdf.rect(0.5, 1.75, 7.5, 3);
 
             pdf.setFontSize(12);
-            
-            // Cell 1:1
-            pdf.cell(0.5, 1.75, 1.875, 0.5, "Incident:", 1, "left");
-            // Cell 1:2
-            pdf.cell(1, 1.75, 1.875, 0.5, "test", 1, "left");
-            // Cell 1:3
-            pdf.cell(1.5, 1.75, 1.875, 0.5, "Report:", 1, "left");
-            // Cell 1:4
-            pdf.cell(2, 1.75, 1.875, 0.5, "test", 1, "left");
-            // Cell 2:1
-            pdf.cell(0.5, 2.25, 1.875, 0.5, "Incident:", 1, "left");
-            // Cell 2:2
-            pdf.cell(1, 2.25, 1.875, 0.5, "test", 1, "left");
-            // Cell 2:3
-            pdf.cell(1.5, 2.25, 1.875, 0.5, "Report:", 1, "left");
-            // Cell 2:4
-            pdf.cell(2, 2.25, 1.875, 0.5, "test", 1, "left");
-            // Cell 3:1
-            pdf.cell(0.5, 2.75, 1.875, 0.5, "Incident:", 1, "left");
-            // Cell 3:2
-            pdf.cell(1, 2.75, 1.875, 0.5, "test", 1, "left");
-            // Cell 3:3
-            pdf.cell(1.5, 2.75, 1.875, 0.5, "Report:", 1, "left");
-            // Cell 3:4
-            pdf.cell(2, 2.75, 1.875, 0.5, "test", 1, "left");
-            // Cell 4:1
-            pdf.cell(0.5, 3.25, 1.875, 0.5, "Incident:", 1, "left");
-            // Cell 4:2
-            pdf.cell(1, 3.25, 1.875, 0.5, "test", 1, "left");
-            
+            pdf.setTextColor(90, 148, 242);    
 
-            /*pdf.text(
+            pdf.text(
                 0.5,
                 2,
-                "Incident: " + incident_id + "      Report: " + report_id + "\n"
-                + "Incident Name: " + incident_name
-            )*/
+                "Incident:\n" +
+                "Incident Name:\n" +
+                "Incident Type:\n" +
+                "Incident Locations:\n",
+                { align: "left", baseline: "bottom" }
+            );
+            pdf.text(
+                0.5,
+                2,
+                "Report:\n" +
+                "Report DTG:\n" +
+                "Incident Start DTG:\n",
+                { align: "left", baseline: "bottom" }
+            );
+
+            pdf.setTextColor(0, 0, 0); 
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
