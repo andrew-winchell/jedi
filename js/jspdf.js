@@ -80,13 +80,13 @@ function pdfContent() {
                 { align: "left", baseline: "bottom"}
             );
 
-            pdf.rect(0.5, 4, 7.5, 10);
+            pdf.rect(0.5, 3.75, 7.5, 10);
             pdf.setTextColor(90, 148, 242);
             pdf.text(
                 0.55,
-                4.05,
+                3.80,
                 "1. Key Takeaways",
-                { align: "left", baseline: "bottom"}
+                { align: "left", baseline: "top"}
             )
 
             incident_id = $("#incident-id")[0].value;
