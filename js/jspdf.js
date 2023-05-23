@@ -23,6 +23,8 @@ function pdfContent() {
             report_id = $("#report-id")[0].value;
             report_dtg = $("#report-starttime")[0].value;
 
+            const table = new autoTable();
+
             headerFooter(pdf);
             
             pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
