@@ -41,17 +41,7 @@ function pdfContent() {
             pdf.rect(0.5, 1.75, 7.5, 3);
 
             pdf.setLineWidth(0);
-            pdf.table(0.5, 1.75, 
-                [
-                    {name:"Incident", value: "Incident:"},
-                    {name:"Report", value: "Report:"}
-                ],
-                [
-                    "incident", "report"
-                ]
-            )
-
-            /*
+            
             // Cell 1:1
             pdf.cell(0.5, 1.75, 1.875, 0.5, "Incident:", 1, "left");
             // Cell 1:2
@@ -80,7 +70,7 @@ function pdfContent() {
             pdf.cell(0.5, 3.25, 1.875, 0.5, "Incident:", 4, "left");
             // Cell 4:2
             pdf.cell(0.5, 3.25, 1.875, 0.5, "test", 4, "left");
-            */
+            
 
             /*pdf.text(
                 0.5,
