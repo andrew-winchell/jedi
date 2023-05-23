@@ -93,9 +93,10 @@ function pdfContent() {
 
             autoTable(pdf, {
                 head: [["1. Key Takeaways"]],
-                body: keyTakeaways(),
+                body: keyTakeaways(incident_id),
                 startY: 3.50,
-                theme: "plain"
+                theme: "plain",
+                tableLineWidth: 0.05
             });
 
             incident_id = $("#incident-id")[0].value;
@@ -121,7 +122,7 @@ function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
-function keyTakeaways () {
+function keyTakeaways (inc_id) {
     let bullets = [
         ["Takeaway 1"], 
         ["Takeaway 2"]
