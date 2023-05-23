@@ -44,25 +44,25 @@ function pdfContent() {
             // Cell 1:4
             pdf.cell(2, 1.75, 1.875, 0.5, "test", 1, "left");
             // Cell 2:1
-            pdf.cell(0.5, 2.25, 1.875, 0.5, "Incident:", 2, "left");
+            pdf.cell(0.5, 2.25, 1.875, 0.5, "Incident:", 1, "left");
             // Cell 2:2
-            pdf.cell(1, 2.25, 1.875, 0.5, "test", 2, "left");
+            pdf.cell(1, 2.25, 1.875, 0.5, "test", 1, "left");
             // Cell 2:3
-            pdf.cell(1.5, 2.25, 1.875, 0.5, "Report:", 2, "left");
+            pdf.cell(1.5, 2.25, 1.875, 0.5, "Report:", 1, "left");
             // Cell 2:4
-            pdf.cell(2, 2.25, 1.875, 0.5, "test", 2, "left");
+            pdf.cell(2, 2.25, 1.875, 0.5, "test", 1, "left");
             // Cell 3:1
-            pdf.cell(0.5, 2.75, 1.875, 0.5, "Incident:", 3, "left");
+            pdf.cell(0.5, 2.75, 1.875, 0.5, "Incident:", 1, "left");
             // Cell 3:2
-            pdf.cell(1, 2.75, 1.875, 0.5, "test", 3, "left");
+            pdf.cell(1, 2.75, 1.875, 0.5, "test", 1, "left");
             // Cell 3:3
-            pdf.cell(1.5, 2.75, 1.875, 0.5, "Report:", 3, "left");
+            pdf.cell(1.5, 2.75, 1.875, 0.5, "Report:", 1, "left");
             // Cell 3:4
-            pdf.cell(2, 2.75, 1.875, 0.5, "test", 3, "left");
+            pdf.cell(2, 2.75, 1.875, 0.5, "test", 1, "left");
             // Cell 4:1
-            pdf.cell(0.5, 3.25, 1.875, 0.5, "Incident:", 4, "left");
+            pdf.cell(0.5, 3.25, 1.875, 0.5, "Incident:", 1, "left");
             // Cell 4:2
-            pdf.cell(1, 3.25, 1.875, 0.5, "test", 4, "left");
+            pdf.cell(1, 3.25, 1.875, 0.5, "test", 1, "left");
             
 
             /*pdf.text(
