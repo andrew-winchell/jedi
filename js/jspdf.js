@@ -37,21 +37,21 @@ function pdfContent() {
             pdf.setTextColor(90, 148, 242);    
 
             pdf.text(
-                0.5,
+                0.55,
                 2,
                 "Incident:\n" +
                 "Incident Name:\n" +
                 "Incident Type:\n" +
                 "Incident Locations:\n",
-                { align: "left", baseline: "bottom" }
+                { align: "left", baseline: "bottom", lineHeightFactor: 1.25 }
             );
             pdf.text(
-                0.5,
+                4.30,
                 2,
                 "Report:\n" +
                 "Report DTG:\n" +
                 "Incident Start DTG:\n",
-                { align: "left", baseline: "bottom" }
+                { align: "left", baseline: "bottom", lineHeightFactor: 1.5 }
             );
 
             pdf.setTextColor(0, 0, 0); 
