@@ -43,8 +43,7 @@ function pdfContent() {
             pdf.setFontSize(12);
             
             // Cell 1:1
-            let cell1_1 = pdf.text(0.5, 1.75, "Incident:")
-            pdf.cell(0.5, 1.75, 1.875, 0.5, cell1_1, 1, "left");
+            pdf.cell(0.5, 1.75, 1.875, 0.5, "Incident:", 1, "left");
             // Cell 1:2
             pdf.cell(1, 1.75, 1.875, 0.5, "test", 1, "left");
             // Cell 1:3
