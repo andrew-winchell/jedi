@@ -1,5 +1,6 @@
 export { pdfContent }
-require('jspdf-autotable')
+import { applyPlugin } from 'jspdf-autotable'
+applyPlugin(jsPDF)
 
 function pdfContent() {
         const pdf = new jsPDF({
