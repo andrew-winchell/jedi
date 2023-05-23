@@ -54,7 +54,7 @@ function pdfContent() {
                 { align: "left", baseline: "bottom", lineHeightFactor: 1.75 }
             );
             pdf.text(
-                4.30,
+                4.50,
                 2,
                 "Report:\n" +
                 "Report DTG:\n" +
@@ -64,7 +64,7 @@ function pdfContent() {
 
             pdf.setTextColor(0, 0, 0);     
             pdf.text(
-                2.10,
+                1.75,
                 2,
                 incident_id + "\n" +
                 incident_name + "\n" +
