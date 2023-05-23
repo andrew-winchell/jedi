@@ -42,7 +42,7 @@ function pdfContent() {
             pdf.setLineWidth(0.01);
             pdf.rect(0.5, 1.75, 7.5, 1.75);
 
-            pdf.setFontSize(12);
+            pdf.setFontSize(10);
             pdf.setTextColor(90, 148, 242);
             pdf.text(
                 0.55,
