@@ -22,9 +22,9 @@ function pdfContent() {
                 4.25,
                 0.50,
                 { align: "center" }
-            )
+            );
             
-            pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header")
+            pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
             pdf.setFontSize(20);
             pdf.setTextColor(255, 255, 255);
             pdf.text(
@@ -32,13 +32,47 @@ function pdfContent() {
                 0.75,
                 1.125,
                 { align: "left", baseline: "middle"}
-            )
+            );
 
             pdf.setFontSize(14);
             pdf.setTextColor(0, 0, 0);
-            pdf.setLineWidth(0.01)
-            pdf.rect(0.5, 1.75, 7.5, 3)
 
+            pdf.setLineWidth(0.01);
+            pdf.rect(0.5, 1.75, 7.5, 3);
+
+            pdf.setLineWidth(0);
+            pdf.cell(
+                0.5,
+                1.75,
+                1.875,
+                0.5,
+                "Incident:",
+                1
+            );
+            pdf.cell(
+                0.5,
+                1.75,
+                1.875,
+                0.5,
+                "",
+                1
+            );
+            pdf.cell(
+                0.5,
+                1.75,
+                1.875,
+                0.5,
+                "Report:",
+                1
+            );
+            pdf.cell(
+                0.5,
+                1.75,
+                1.875,
+                0.5,
+                "",
+                1
+            );
 
             /*pdf.text(
                 0.5,
