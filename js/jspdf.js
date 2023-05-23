@@ -41,7 +41,15 @@ function pdfContent() {
             pdf.rect(0.5, 1.75, 7.5, 3);
 
             pdf.setLineWidth(0);
-            pdf.table(0.5, 1.75, [{name:"Incident", value: "Incident:"}, {name:"Report", value: "Report:"}])
+            pdf.table(0.5, 1.75, 
+                [
+                    {name:"Incident", value: "Incident:"},
+                    {name:"Report", value: "Report:"}
+                ],
+                [
+                    "incident", "report"
+                ]
+            )
 
             /*
             // Cell 1:1
