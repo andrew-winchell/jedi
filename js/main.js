@@ -110,7 +110,7 @@ require([
                                     "<div draggable='true' class='listItemClass' id='takeawayNo" + takeaway.attributes.objectid + 
                                     "'><calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways></calcite-input></div>"
                                 )
-                                $("#"+ta_id).value = takeaway.attributes.Key_Takeaways_other2;
+                                $("#"+ ta_id + " > calcite-input").value = takeaway.attributes.Key_Takeaways_other2;
                             }
                         }
                 });
