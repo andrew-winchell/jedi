@@ -24,8 +24,6 @@ function pdfContent() {
             report_id = $("#report-id")[0].value;
             let report_time_arr = $("#report-starttime")[0].value.split("T");
             report_dtg = report_time_arr[0] + " " + report_time_arr[1] + ":00Z";
-
-            headerFooter(pdf);
             
             pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
             pdf.setFontSize(20);
@@ -127,7 +125,7 @@ function pdfContent() {
             });
 
             let pages = pdf.internal.getNumberOfPages();
-            console.log(pages);
+            headerFooter(pdf, pages);
             
             let base64string = pdf.output("bloburl");
             debugBase64(base64string);
@@ -155,23 +153,27 @@ function keyTakeaways () {
     return bullets;
 }
 
-function headerFooter (pdf) {
-    // Header
-    pdf.setFontSize(12);
-    pdf.setTextColor(255, 0, 0);
-    pdf.text(
-        "FOR OFFICIAL USE ONLY",
-        4.25,
-        0.375,
-        { align: "center", baseline: "middle" }
-    );
-    // Footer
-    pdf.text(
-        "FOR OFFICIAL USE ONLY",
-        4.25,
-        10.625,
-        { align: "center", baseline: "middle" }
-    );
+function headerFooter (pdf, pages) {
+    for (i=0; i<pages; i++) {
+        pdf.setPage(i);
+        
+        // Header
+        pdf.setFontSize(12);
+        pdf.setTextColor(255, 0, 0);
+        pdf.text(
+            "FOR OFFICIAL USE ONLY",
+            4.25,
+            0.375,
+            { align: "center", baseline: "middle" }
+        );
+        // Footer
+        pdf.text(
+            "FOR OFFICIAL USE ONLY",
+            4.25,
+            10.625,
+            { align: "center", baseline: "middle" }
+        );
+    }
     
 }
 
