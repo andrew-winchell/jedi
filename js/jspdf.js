@@ -97,7 +97,7 @@ function pdfContent() {
                 head: [["1. Key Takeaways"]],
                 headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
                 body: keyTakeaways(incident_id),
-                bodyStyles: {cellPadding: 0.25, cellWidth: 'wrap'},
+                bodyStyles: {Padding: {top: 0, right: 0.25, bottom: 0, left: 0.25}, cellWidth: 'wrap'},
                 startY: 3.50,
                 theme: "plain",
                 tableLineWidth: 0.01,
@@ -125,8 +125,8 @@ function delay (time) {
 
 function keyTakeaways (inc_id) {
     let bullets = [
-        ["\t\u2022 Takeaway 1. This is a test to see if the text in a cell will automatically wrap to the next line in a table or if there needs to be a manual background process to force the cell to wrap text."], 
-        ["\t\u2022 Takeaway 2"]
+        ["\u2022 Takeaway 1. This is a test to see if the text in a cell will automatically wrap to the next line in a table or if there needs to be a manual background process to force the cell to wrap text."], 
+        ["\u2022 Takeaway 2"]
     ];
     return bullets;
 }
