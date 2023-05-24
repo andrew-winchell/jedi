@@ -39,7 +39,7 @@ function pdfContent() {
                 { align: "left", baseline: "middle" }
             );
 
-            pdf.setFontSize(14);
+            /*pdf.setFontSize(14);
             pdf.setTextColor(0, 0, 0);
 
             pdf.setLineWidth(0.01);
@@ -93,6 +93,7 @@ function pdfContent() {
             );
 
             pdf.setTextColor(90, 148, 242);
+            */
 
             // Key Takeaways Table
             autoTable(pdf, {
@@ -100,7 +101,6 @@ function pdfContent() {
                 headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
                 body: keyTakeaways(incident_id),
                 bodyStyles: {cellPadding: {top: 0, right: 0.25, bottom: 0, left: 0.50}, cellWidth: 'wrap'},
-                startY: 3.50,
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
