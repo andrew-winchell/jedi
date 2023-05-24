@@ -93,12 +93,15 @@ function delay (time) {
 }
 
 function keyTakeaways () {
+    let bullets = [];
+
     let takeaways = $("#key-takeaways")[0].children;
-    console.log(takeaways)
-    let bullets = [
-        ["\u2022 Takeaway 1. This is a test to see if the text in a cell will automatically wrap to the next line in a table or if there needs to be a manual background process to force the cell to wrap text."], 
-        ["\u2022 Takeaway 2"]
-    ];
+
+    for (const takeaway of takeaways) {
+        let bullet = ["\u2022 " + takeaway.children[0].value];
+        bullets.push(bullet);
+    }
+    
     return bullets;
 }
 
