@@ -97,7 +97,7 @@ function pdfContent() {
                 head: [["1. Key Takeaways"]],
                 headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
                 body: keyTakeaways(incident_id),
-                bodyStyles: {overflow: 'linebreak', cellWidth: 'wrap'},
+                bodyStyles: {cellPadding: 0.25, cellWidth: 'wrap'},
                 startY: 3.50,
                 theme: "plain",
                 tableLineWidth: 0.01,
