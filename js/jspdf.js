@@ -94,7 +94,7 @@ function pdfContent() {
             // Key Takeaways Table
             autoTable(pdf, {
                 head: [["1. Key Takeaways"]],
-                headStyles: {textColor:[90, 148, 242]},
+                headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
                 body: keyTakeaways(incident_id),
                 startY: 3.50,
                 theme: "plain",
@@ -129,8 +129,8 @@ function delay (time) {
 
 function keyTakeaways (inc_id) {
     let bullets = [
-        ["Takeaway 1"], 
-        ["Takeaway 2"]
+        ["\u2022 Takeaway 1"], 
+        ["\u2022 Takeaway 2"]
     ];
     return bullets;
 }
