@@ -110,7 +110,7 @@ require([
                                     "<div draggable='true' class='listItemClass' id='takeawayNo" + ta_id.slice(1) + "'></div>"
                                 );
                                 $(ta_id).append(
-                                    "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways value='" + takeaway.attributes.Key_Takeaways_other2 + "'></calcite-input>"
+                                    "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways' value='" + takeaway.attributes.Key_Takeaways_other2 + "'></calcite-input>"
                                 );
                             }
                         }
