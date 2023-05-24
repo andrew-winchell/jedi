@@ -115,7 +115,6 @@ function pdfContent() {
             });
 
             // Key Takeaways Table
-            let kt_startY = ;
             let kt_table = autoTable(pdf, {
                 head: [["1. Key Takeaways"]],
                 headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
