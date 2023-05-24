@@ -1,3 +1,4 @@
+import jsPDF from 'jspdf';
 import { pdfContent } from './jspdf.js'
 
 require([
@@ -93,6 +94,17 @@ require([
                 $("#report-starttime")[0].valueAsNumber = feature.attributes.report_dtg;
                 //$("#threat-name")[0].value = 
                 $("#incident-status")[0].value = feature.attributes.inc_status.slice(4);
+
+                const kt_query = {
+                    outFields: ["*"],
+                    relationshipId: 0,
+                    objectIds: feature.attributes.objectid
+                };
+
+                JCATMasterLayer.queryRelatedFeatures(kt_query)
+                    .then((kt_results) => {
+                        console.log(kt_results)
+                });
 
                 // Key Takeaways inputs
                 $("#kt-incident-name").text(feature.attributes.incident_name);
