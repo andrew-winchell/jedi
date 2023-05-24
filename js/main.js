@@ -107,11 +107,10 @@ require([
                             for (const takeaway of takeaways) {
                                 let ta_id = "#takeawayNo" + takeaway.attributes.objectid;
                                 $("#key-takeaways").append(
-                                    "<div draggable='true' class='listItemClass' id='takeawayNo" + ta_id.slice(1) + 
-                                    "'></div>"
+                                    "<div draggable='true' class='listItemClass' id='takeawayNo" + ta_id.slice(1) + "'></div>"
                                 );
                                 $(ta_id).append(
-                                    "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways value=" + takeaway.attributes.Key_Takeaways_other2 + "></calcite-input>"
+                                    "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways value='" + takeaway.attributes.Key_Takeaways_other2 + "'></calcite-input>"
                                 );
                             }
                         }
