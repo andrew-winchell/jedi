@@ -45,10 +45,9 @@ function pdfContent() {
                     ["Incident Name:", incident_name, "Report DTG:", report_dtg],
                     ["Incident Type:", incident_type, "Incident Start DTG:", incident_dtg],
                     ["Incident Locations:", incident_locs],
-                    [""],
                     ["Last Updated:"]
                 ],
-                bodyStyles: {cellPadding: {top: 0.125, right: 0, bottom: 0.125, left: 0}, cellWidth: 'wrap'},
+                bodyStyles: {cellPadding: {top: 0.125, right: 0.125, bottom: 0.125, left: 0.125}, cellWidth: 'wrap'},
                 columnStyles: { 0: { textColor:[90, 148, 242] }, 2: { textColor:[90, 148, 242] } },
                 willDrawCell: (data) => {
                     let rows = data.table.body;
