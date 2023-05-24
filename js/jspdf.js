@@ -10,8 +10,7 @@ function pdfContent() {
 
         let incident_id, incident_name, incident_type, incident_locs, report_id, report_dtg, incident_dtg;
 
-        var header = new Image();
-        header.src = "media/pdf_header.png";
+        console.log($('input[type=text], textarea'))
 
         delay(1500).then(() => { 
 
