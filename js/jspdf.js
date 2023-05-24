@@ -10,8 +10,6 @@ function pdfContent() {
 
         let incident_id, incident_name, incident_type, incident_locs, report_id, report_dtg, incident_dtg;
 
-        console.log($('input[type=text], textarea'))
-
         delay(1500).then(() => { 
 
             incident_id = $("#incident-id")[0].value;
