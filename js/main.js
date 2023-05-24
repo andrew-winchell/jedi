@@ -89,10 +89,10 @@ require([
                 //$("#iwl-names")[0].value = feature.attributes.;
                 $("#report-id")[0].value = feature.attributes.report;
                 $("#incident-locations")[0].value = feature.attributes.incident_locations;
-                //$("#incident-start")[0].value = feature.attributes.
-                //$("#report-start")[0].value = feature.attributes.
+                $("#incident-start")[0].value = feature.attributes.incident_start_dtg;
+                $("#report-start")[0].value = feature.attributes.report_dtg;
                 //$("#threat-name")[0].value = 
-                //$("#incident-status")[0].value = feature.attributes.
+                $("#incident-status")[0].value = feature.attributes.inc_status;
 
                 // key takeaways inputs
                 $("#kt-incident-name").text(feature.attributes.incident_name);
