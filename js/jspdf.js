@@ -25,7 +25,6 @@ function pdfContent() {
             let report_time_arr = $("#report-starttime")[0].value.split("T");
             report_dtg = report_time_arr[0] + " " + report_time_arr[1] + ":00Z";
             
-            pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
             pdf.setFontSize(20);
             pdf.setTextColor(255, 255, 255);
             pdf.text(
@@ -158,6 +157,7 @@ function headerFooter (pdf, pages) {
         pdf.setPage(i);
 
         // Header
+        pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
         pdf.setFontSize(12);
         pdf.setTextColor(255, 0, 0);
         pdf.text(
