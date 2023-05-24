@@ -98,7 +98,8 @@ function pdfContent() {
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
-                margin: 0
+                margin: 0,
+                tableWidth: 7.5
             });
 
             incident_id = $("#incident-id")[0].value;
