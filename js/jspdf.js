@@ -122,6 +122,7 @@ function pdfContent() {
                 bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
                 foot: [["Last Updated:"]],
                 footStyles: { textColor:[170, 170, 170], fontStyle: "normal" },
+                startY: 1.75,
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
