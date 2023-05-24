@@ -68,6 +68,7 @@ function pdfContent() {
                 headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
                 body: keyTakeaways(incident_id),
                 bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
+                foot: [["Last Updated:"]],
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
@@ -101,7 +102,7 @@ function keyTakeaways () {
         let bullet = ["\u2022 " + takeaway.children[0].value];
         bullets.push(bullet);
     }
-    
+
     return bullets;
 }
 
