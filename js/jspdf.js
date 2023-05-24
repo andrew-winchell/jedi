@@ -98,7 +98,7 @@ function pdfContent() {
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
-                margin: 0,
+                margin: {top:0, right:0.5, bottom:0, left:0.5},
                 tableWidth: 7.5
             });
 
