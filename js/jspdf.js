@@ -126,7 +126,7 @@ function pdfContent() {
                 tableWidth: 7.5
             });
 
-            let pages = pdf.internal.getNumberofPages();
+            let pages = pdf.internal.getNumberOfPages();
             console.log(pages);
             
             let base64string = pdf.output("bloburl");
