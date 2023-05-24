@@ -96,13 +96,16 @@ function pdfContent() {
             */
 
             // Incident Details Table
-            autoTable(pdf, {
+            let id_table = autoTable(pdf, {
                 body: [
                     ["Incident:", incident_id, "Report:", report_id],
                     ["Incident Name:", incident_name, "Report DTG:", report_dtg],
                     ["Incident Type:", incident_type, "Incident Start DTG:", incident_dtg],
-                    ["Incident Locations:", incident_locs]
+                    ["Incident Locations:", incident_locs],
+                    [""],
+                    ["Last Updated:"]
                 ],
+                columnStyles: { 0: { textColor:[90, 148, 242] }, 2: { textColor:[90, 148, 242] } },
                 startY: 1.75,
                 theme: "plain",
                 tableLineWidth: 0.01,
@@ -112,7 +115,8 @@ function pdfContent() {
             });
 
             // Key Takeaways Table
-            autoTable(pdf, {
+            let kt_startY = ;
+            let kt_table = autoTable(pdf, {
                 head: [["1. Key Takeaways"]],
                 headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
                 body: keyTakeaways(incident_id),
