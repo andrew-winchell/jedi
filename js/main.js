@@ -117,10 +117,6 @@ require([
                                     }
                                 )
                             }
-                            delay(500)
-                                .then(() => {
-                                    console.log($("textarea"));
-                            });
                         }
                 });
 
