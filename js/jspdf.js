@@ -19,6 +19,7 @@ function pdfContent() {
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
             incident_type = $("#incident-type")[0].value;
+            console.log($("#incident-starttime"))
             incident_locs = $("#incident-locations")[0].value;
             incident_dtg = $("#incident-starttime")[0].value;
             report_id = $("#report-id")[0].value;
@@ -122,47 +123,9 @@ function delay (time) {
 }
 
 function keyTakeaways (inc_id) {
+    
     let bullets = [
         ["\t\u2022 Takeaway 1"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"],
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"],
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"],
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"],
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"],
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
-        ["\t\u2022 Takeaway 2"], 
         ["\t\u2022 Takeaway 2"]
     ];
     return bullets;
