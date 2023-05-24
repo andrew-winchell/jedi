@@ -13,7 +13,7 @@ function pdfContent() {
         var header = new Image();
         header.src = "media/pdf_header.png";
 
-        delay(1000).then(() => { 
+        delay(1500).then(() => { 
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
