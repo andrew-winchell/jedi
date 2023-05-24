@@ -86,6 +86,7 @@ $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
 // Survey mode panel slide toggle
 $("#mode-expander").on("click", (e) => {
     $("#mode-container").slideToggle("slow");
+    console.log($("#mode-expander"))
     let icon = $("#mode-expander").icon-start;
     if (icon == "chevron-up") {
         icon = "chevron-down";
