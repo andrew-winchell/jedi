@@ -105,12 +105,12 @@ require([
                         let takeaways = kt_results[feature.attributes.objectid].features
                         if (takeaways.length > 0) {
                             for (const takeaway of takeaways) {
-                                let ta_id = "takeawayNo" + takeaway.attributes.objectid;
+                                let ta_id = "#takeawayNo" + takeaway.attributes.objectid;
                                 $("#key-takeaways").append(
-                                    "<div draggable='true' class='listItemClass' id='takeawayNo" + takeaway.attributes.objectid + 
+                                    "<div draggable='true' class='listItemClass' id='takeawayNo" + ta_id.slice(1) + 
                                     "'></div>"
                                 );
-                                $("#"+ ta_id).append(
+                                $(ta_id).append(
                                     "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways value=" + takeaway.attributes.Key_Takeaways_other2 + "></calcite-input>"
                                 );
                             }
