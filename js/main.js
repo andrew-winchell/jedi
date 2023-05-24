@@ -107,7 +107,7 @@ require([
                             for (const takeaway of takeaways) {
                                 let ta_id = "#takeawayNo" + takeaway.attributes.objectid;
                                 $("#key-takeaways").append(
-                                    "<div draggable='true' class='listItemClass' id='takeawayNo" + ta_id.slice(1) + "'></div>"
+                                    "<div draggable='true' class='listItemClass' id='" + ta_id.slice(1) + "'></div>"
                                 );
                                 delay(500)
                                     .then(() => {
