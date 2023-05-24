@@ -39,62 +39,6 @@ function pdfContent() {
                 { align: "left", baseline: "middle" }
             );
 
-            /*pdf.setFontSize(14);
-            pdf.setTextColor(0, 0, 0);
-
-            pdf.setLineWidth(0.01);
-            pdf.rect(0.5, 1.75, 7.5, 1.50);
-
-            pdf.setFontSize(10);
-            pdf.setTextColor(90, 148, 242);
-            pdf.text(
-                0.55,
-                2,
-                "Incident:\n" +
-                "Incident Name:\n" +
-                "Incident Type:\n" +
-                "Incident Locations:\n",
-                { align: "left", baseline: "bottom", lineHeightFactor: 1.75 }
-            );
-            pdf.text(
-                4.65,
-                2,
-                "Report:\n" +
-                "Report DTG:\n" +
-                "Incident Start DTG:\n",
-                { align: "left", baseline: "bottom", lineHeightFactor: 2 }
-            );
-
-            pdf.setTextColor(0, 0, 0);     
-            pdf.text(
-                1.75,
-                2,
-                incident_id + "\n" +
-                incident_name + "\n" +
-                incident_type + "\n" +
-                incident_locs + "\n",
-                { align: "left", baseline: "bottom", lineHeightFactor: 1.75 }
-            );
-            pdf.text(
-                5.95,
-                2,
-                report_id + "\n" +
-                report_dtg + "\n" +
-                incident_dtg + "\n",
-                { align: "left", baseline: "bottom", lineHeightFactor: 2 }
-            );
-
-            pdf.setTextColor(150, 150, 150);     
-            pdf.text(
-                0.55,
-                3.20,
-                "Last Updated: ",
-                { align: "left", baseline: "bottom"}
-            );
-
-            pdf.setTextColor(90, 148, 242);
-            */
-
             // Incident Details Table
             let id_table = autoTable(pdf, {
                 body: [
@@ -106,6 +50,12 @@ function pdfContent() {
                     ["Last Updated:"]
                 ],
                 columnStyles: { 0: { textColor:[90, 148, 242] }, 2: { textColor:[90, 148, 242] } },
+                willDrawCell: (data) => {
+                    let rows = data.table.body;
+                    if (data.row.index === rows.length -1) {
+                        pdf.setTextColor(190, 190, 190);
+                    }
+                },
                 startY: 1.75,
                 theme: "plain",
                 tableLineWidth: 0.01,
