@@ -109,9 +109,13 @@ require([
                                 $("#key-takeaways").append(
                                     "<div draggable='true' class='listItemClass' id='takeawayNo" + ta_id.slice(1) + "'></div>"
                                 );
-                                $(ta_id).append(
-                                    "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways' value='" + takeaway.attributes.Key_Takeaways_other2 + "'></calcite-input>"
-                                );
+                                delay(500)
+                                    .then(() => {
+                                        $(ta_id).append(
+                                            "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways' value='" + takeaway.attributes.Key_Takeaways_other2 + "'></calcite-input>"
+                                        );
+                                    }
+                                )
                             }
                         }
                 });
@@ -133,4 +137,8 @@ require([
     $("#incident-form").on("submit", (self) => {
         formValidation(self);
     });
+
+    function delay (time) {
+        return new Promise(resolve => setTimeout(resolve, time));
+    }
 })
