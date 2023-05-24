@@ -95,6 +95,22 @@ function pdfContent() {
             pdf.setTextColor(90, 148, 242);
             */
 
+            // Incident Details Table
+            autoTable(pdf, {
+                body: [
+                    ["Incident:", incident_id, "Report:", report_id],
+                    ["Incident Name:", incident_name, "Report DTG:", report_dtg],
+                    ["Incident Type:", incident_type, "Incident Start DTG:", incident_dtg],
+                    ["Incident Locations:", incident_locs]
+                ],
+                startY: 1.75,
+                theme: "plain",
+                tableLineWidth: 0.01,
+                tableLineColor: 0,
+                margin: {top:0.75, right:0.5, bottom:0.75, left:0.5},
+                tableWidth: 7.5
+            });
+
             // Key Takeaways Table
             autoTable(pdf, {
                 head: [["1. Key Takeaways"]],
