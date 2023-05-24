@@ -87,7 +87,7 @@ $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
 $("#mode-expander").on("click", (e) => {
     $("#mode-container").slideToggle("slow");
     console.log($("#mode-expander"))
-    let icon = $("#mode-expander").icon-start;
+    let icon = $("#mode-expander").iconStart;
     if (icon == "chevron-up") {
         icon = "chevron-down";
     } else {
