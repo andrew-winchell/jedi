@@ -91,8 +91,10 @@ function pdfContent() {
 
             pdf.setTextColor(90, 148, 242);
 
+            // Key Takeaways Table
             autoTable(pdf, {
                 head: [["1. Key Takeaways"]],
+                headStyles: {textColor:[90, 148, 242]},
                 body: keyTakeaways(incident_id),
                 startY: 3.50,
                 theme: "plain",
