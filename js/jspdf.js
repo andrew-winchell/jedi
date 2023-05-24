@@ -93,7 +93,8 @@ function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
-function keyTakeaways (inc_id) {
+function keyTakeaways () {
+    console.log($("#key-takeaways"));
     let bullets = [
         ["\u2022 Takeaway 1. This is a test to see if the text in a cell will automatically wrap to the next line in a table or if there needs to be a manual background process to force the cell to wrap text."], 
         ["\u2022 Takeaway 2"]
