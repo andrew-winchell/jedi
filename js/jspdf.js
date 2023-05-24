@@ -44,6 +44,7 @@ function pdfContent() {
                 ],
                 bodyStyles: {cellPadding: {top: 0.125, right: 0.125, bottom: 0.125, left: 0.125}, cellWidth: 'wrap'},
                 foot: [["Last Updated:"]],
+                footStyles: { textColor:[170, 170, 170], fontStyle: "normal" },
                 columnStyles: { 0: { textColor:[90, 148, 242] }, 2: { textColor:[90, 148, 242] } },
                 startY: 1.75,
                 theme: "plain",
@@ -56,10 +57,11 @@ function pdfContent() {
             // Key Takeaways Table
             let kt_table = autoTable(pdf, {
                 head: [["1. Key Takeaways"]],
-                headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
+                headStyles: { textColor:[90, 148, 242], fontStyle: "normal" },
                 body: keyTakeaways(incident_id),
-                bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
+                bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
                 foot: [["Last Updated:"]],
+                footStyles: { textColor:[170, 170, 170], fontStyle: "normal" },
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
@@ -70,10 +72,11 @@ function pdfContent() {
             // Threats and Hazards Overview Table
             let th_table = autoTable(pdf, {
                 head: [["2. Threat/Hazard Overview"]],
-                headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
+                headStyles: { textColor:[90, 148, 242], fontStyle: "normal" },
                 body: [[]],
-                bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
+                bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
                 foot: [["Last Updated:"]],
+                footStyles: { textColor:[170, 170, 170], fontStyle: "normal" },
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
@@ -84,10 +87,11 @@ function pdfContent() {
             // TFM Impacts and Outlook Table
             let tfm_table = autoTable(pdf, {
                 head: [["4. TFM Impacts and Outlook"]],
-                headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
+                headStyles: { textColor:[90, 148, 242], fontStyle: "normal" },
                 body: [[]],
-                bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
+                bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
                 foot: [["Last Updated:"]],
+                footStyles: { textColor:[170, 170, 170], fontStyle: "normal" },
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
@@ -98,10 +102,11 @@ function pdfContent() {
             // Operational Response Table
             let orm_table = autoTable(pdf, {
                 head: [["5. Operational Response Measures"]],
-                headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
+                headStyles: { textColor:[90, 148, 242], fontStyle: "normal" },
                 body: [[]],
-                bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
+                bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
                 foot: [["Last Updated:"]],
+                footStyles: { textColor:[170, 170, 170], fontStyle: "normal" },
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
@@ -112,10 +117,11 @@ function pdfContent() {
             // Response and Recovery Focus Table
             let rrf_table = autoTable(pdf, {
                 head: [["6. Response and Recovery Focus"]],
-                headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
+                headStyles: { textColor:[90, 148, 242], fontStyle: "normal" },
                 body: [[]],
-                bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
+                bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
                 foot: [["Last Updated:"]],
+                footStyles: { textColor:[170, 170, 170], fontStyle: "normal" },
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
@@ -160,6 +166,16 @@ function headerFooter (pdf, pages) {
         var header = new Image();
         header.src = "media/pdf_header.png";
         pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
+
+        pdf.setFontSize(20);
+        pdf.setTextColor(255, 255, 255);
+        pdf.text(
+            "ATO Significant Incident SITREP",
+            0.75,
+            1.125,
+            { align: "left", baseline: "middle" }
+        );
+
         pdf.setFontSize(12);
         pdf.setTextColor(255, 0, 0);
         pdf.text(
