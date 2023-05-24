@@ -103,6 +103,12 @@ require([
                 JCATMasterLayer.queryRelatedFeatures(kt_query)
                     .then((kt_results) => {
                         let takeaways = kt_results[feature.attributes.objectid].features
+                        for (const takeaway of takeaways) {
+                            $("#key-takeaways").append(
+                                "<div draggable='true' class='listItemClass' id='takeawayNo" + takeaway.attributes.objectid + 
+                                "'><calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways></calcite-input></div>"
+                            )
+                        }
                 });
 
                 // Key Takeaways inputs
