@@ -82,20 +82,20 @@ require([
             .then((results) => {
                 let feature = results.features[0];
                 console.log(feature.attributes);
-                console.log($("#incident-start"));
-                // incident details inputs
+                console.log($("#incident-starttime"));
+                // Incident Details inputs
                 $("#incident-id")[0].value = feature.attributes.incident;
                 $("#incident-name")[0].value = feature.attributes.incident_name;
                 $("#incident-type")[0].value = feature.attributes.incident_type;
                 //$("#iwl-names")[0].value = feature.attributes.;
                 $("#report-id")[0].value = feature.attributes.report;
                 $("#incident-locations")[0].value = feature.attributes.incident_locations;
-                //$("#incident-start")[0].value = feature.attributes.incident_start_dtg;
-                //$("#report-start")[0].value = feature.attributes.report_dtg;
+                $("#incident-starttime")[0].valueAsNumber = feature.attributes.incident_start_dtg;
+                $("#report-starttime")[0].valueAsNumber = feature.attributes.report_dtg;
                 //$("#threat-name")[0].value = 
                 $("#incident-status")[0].value = feature.attributes.inc_status;
 
-                // key takeaways inputs
+                // Key Takeaways inputs
                 $("#kt-incident-name").text(feature.attributes.incident_name);
                 $("#kt-incident-id").text(feature.attributes.incident);
                 $("#kt-report-id").text(feature.attributes.report);
