@@ -93,7 +93,7 @@ require([
                 $("#incident-starttime")[0].valueAsNumber = feature.attributes.incident_start_dtg;
                 $("#report-starttime")[0].valueAsNumber = feature.attributes.report_dtg;
                 //$("#threat-name")[0].value = 
-                $("#incident-status")[0].value = feature.attributes.inc_status;
+                $("#incident-status")[0].value = feature.attributes.inc_status.slice(4);
 
                 // Key Takeaways inputs
                 $("#kt-incident-name").text(feature.attributes.incident_name);
