@@ -8,7 +8,6 @@ function pdfContent() {
             unit: "in"
         });
 
-        let refreshText = "";
         let incident_id, incident_name, incident_type, incident_locs, report_id, report_dtg, incident_dtg;
 
         var header = new Image();
@@ -49,6 +48,7 @@ function pdfContent() {
                     [""],
                     ["Last Updated:"]
                 ],
+                bodyStyles: {cellPadding: {top: 0.125, right: 0, bottom: 0.125, left: 0}, cellWidth: 'wrap'},
                 columnStyles: { 0: { textColor:[90, 148, 242] }, 2: { textColor:[90, 148, 242] } },
                 willDrawCell: (data) => {
                     let rows = data.table.body;
@@ -69,7 +69,7 @@ function pdfContent() {
                 head: [["1. Key Takeaways"]],
                 headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
                 body: keyTakeaways(incident_id),
-                bodyStyles: {cellPadding: {top: 0, right: 0.25, bottom: 0, left: 0.50}, cellWidth: 'wrap'},
+                bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,

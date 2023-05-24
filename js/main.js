@@ -102,7 +102,7 @@ require([
 
                 JCATMasterLayer.queryRelatedFeatures(kt_query)
                     .then((kt_results) => {
-                        console.log(kt_results)
+                        let takeaways = kt_results[feature.attributes.objectid].features
                 });
 
                 // Key Takeaways inputs
