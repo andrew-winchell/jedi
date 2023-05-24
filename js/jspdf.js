@@ -70,9 +70,51 @@ function pdfContent() {
                 tableWidth: 7.5
             });
 
-            // Key Takeaways Table
+            // Threats and Hazards Overview Table
             let th_table = autoTable(pdf, {
                 head: [["2. Threat/Hazard Overview"]],
+                headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
+                body: [[]],
+                bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
+                foot: [["Last Updated:"]],
+                theme: "plain",
+                tableLineWidth: 0.01,
+                tableLineColor: 0,
+                margin: {top:0.75, right:0.5, bottom:0.75, left:0.5},
+                tableWidth: 7.5
+            });
+
+            // TFM Impacts and Outlook Table
+            let tfm_table = autoTable(pdf, {
+                head: [["4. TFM Impacts and Outlook"]],
+                headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
+                body: [[]],
+                bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
+                foot: [["Last Updated:"]],
+                theme: "plain",
+                tableLineWidth: 0.01,
+                tableLineColor: 0,
+                margin: {top:0.75, right:0.5, bottom:0.75, left:0.5},
+                tableWidth: 7.5
+            });
+
+            // Operational Response Table
+            let orm_table = autoTable(pdf, {
+                head: [["5. Operational Response Measures"]],
+                headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
+                body: [[]],
+                bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
+                foot: [["Last Updated:"]],
+                theme: "plain",
+                tableLineWidth: 0.01,
+                tableLineColor: 0,
+                margin: {top:0.75, right:0.5, bottom:0.75, left:0.5},
+                tableWidth: 7.5
+            });
+
+            // Response and Recovery Focus Table
+            let rrf_table = autoTable(pdf, {
+                head: [["6. Response and Recovery Focus"]],
                 headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
                 body: [[]],
                 bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
