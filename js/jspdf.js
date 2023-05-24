@@ -21,9 +21,11 @@ function pdfContent() {
             incident_type = $("#incident-type")[0].value;
             console.log($("#incident-starttime"))
             incident_locs = $("#incident-locations")[0].value;
-            incident_dtg = $("#incident-starttime")[0].value;
+            let incident_time_arr = $("#incident-starttime")[0].value.split("T");
+            incident_dtg = incident_time_arr[0] + " " + incident_time_arr[1] + "Z";
             report_id = $("#report-id")[0].value;
-            report_dtg = $("#report-starttime")[0].value;
+            let report_time_arr = $("#report-starttime")[0].value.split("T");
+            report_dtg = report_time_arr[0] + " " + report_time_arr[1] + "Z";
 
             headerFooter(pdf);
             
