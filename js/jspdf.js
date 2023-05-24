@@ -70,9 +70,19 @@ function pdfContent() {
                 tableWidth: 7.5
             });
 
-            incident_id = $("#incident-id")[0].value;
-            incident_name = $("#incident-name")[0].value;
-            //pdf.text(incident_id + "\n" + incident_name, 20, 20);
+            // Key Takeaways Table
+            let th_table = autoTable(pdf, {
+                head: [["2. Threat/Hazard Overview"]],
+                headStyles: {textColor:[90, 148, 242], fontStyle: "normal"},
+                body: [[]],
+                bodyStyles: {cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap'},
+                foot: [["Last Updated:"]],
+                theme: "plain",
+                tableLineWidth: 0.01,
+                tableLineColor: 0,
+                margin: {top:0.75, right:0.5, bottom:0.75, left:0.5},
+                tableWidth: 7.5
+            });
             
             let base64string = pdf.output("bloburl");
             debugBase64(base64string);
