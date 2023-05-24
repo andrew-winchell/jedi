@@ -18,7 +18,6 @@ function pdfContent() {
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
             incident_type = $("#incident-type")[0].value;
-            console.log($("#incident-starttime"))
             incident_locs = $("#incident-locations")[0].value;
             let incident_time_arr = $("#incident-starttime")[0].value.split("T");
             incident_dtg = incident_time_arr[0] + " " + incident_time_arr[1] + ":00Z";
