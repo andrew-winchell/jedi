@@ -96,7 +96,7 @@ require([
 
                 const kt_query = {
                     outFields: ["*"],
-                    relationshipId: 0,
+                    relationshipId: 1,
                     objectIds: feature.attributes.objectid
                 };
 
