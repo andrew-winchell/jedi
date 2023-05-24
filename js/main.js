@@ -81,6 +81,7 @@ require([
         JCATMasterLayer.queryFeatures(query)
             .then((results) => {
                 let feature = results.features[0];
+                console.log(feature.attributes)
                 // incident details inputs
                 $("#incident-id")[0].value = feature.attributes.incident;
                 $("#incident-name")[0].value = feature.attributes.incident_name;
