@@ -125,7 +125,7 @@ function delay (time) {
 function keyTakeaways (inc_id) {
     
     let bullets = [
-        ["\t\u2022 Takeaway 1"], 
+        ["\t\u2022 Takeaway 1. This is a test to see if the text in a cell will automatically wrap to the next line in a table or if there needs to be a manual background process to force the cell to wrap text."], 
         ["\t\u2022 Takeaway 2"]
     ];
     return bullets;
