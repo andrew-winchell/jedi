@@ -43,17 +43,11 @@ function pdfContent() {
                     ["Incident:", incident_id, "Report:", report_id],
                     ["Incident Name:", incident_name, "Report DTG:", report_dtg],
                     ["Incident Type:", incident_type, "Incident Start DTG:", incident_dtg],
-                    ["Incident Locations:", incident_locs],
-                    ["Last Updated:"]
+                    ["Incident Locations:", incident_locs]
                 ],
                 bodyStyles: {cellPadding: {top: 0.125, right: 0.125, bottom: 0.125, left: 0.125}, cellWidth: 'wrap'},
+                foot: [["Last Updated:"]],
                 columnStyles: { 0: { textColor:[90, 148, 242] }, 2: { textColor:[90, 148, 242] } },
-                willDrawCell: (data) => {
-                    let rows = data.table.body;
-                    if (data.row.index === rows.length -1) {
-                        pdf.setTextColor(190, 190, 190);
-                    }
-                },
                 startY: 1.75,
                 theme: "plain",
                 tableLineWidth: 0.01,
