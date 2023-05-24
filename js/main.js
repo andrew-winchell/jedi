@@ -81,7 +81,8 @@ require([
         JCATMasterLayer.queryFeatures(query)
             .then((results) => {
                 let feature = results.features[0];
-                console.log(feature.attributes)
+                console.log(feature.attributes);
+                console.log($("#incident-start"));
                 // incident details inputs
                 $("#incident-id")[0].value = feature.attributes.incident;
                 $("#incident-name")[0].value = feature.attributes.incident_name;
@@ -89,8 +90,8 @@ require([
                 //$("#iwl-names")[0].value = feature.attributes.;
                 $("#report-id")[0].value = feature.attributes.report;
                 $("#incident-locations")[0].value = feature.attributes.incident_locations;
-                $("#incident-start")[0].value = feature.attributes.incident_start_dtg;
-                $("#report-start")[0].value = feature.attributes.report_dtg;
+                //$("#incident-start")[0].value = feature.attributes.incident_start_dtg;
+                //$("#report-start")[0].value = feature.attributes.report_dtg;
                 //$("#threat-name")[0].value = 
                 $("#incident-status")[0].value = feature.attributes.inc_status;
 
