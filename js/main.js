@@ -117,6 +117,10 @@ require([
                                     }
                                 )
                             }
+                            delay(500)
+                                .then(() => {
+                                    console.log($("textarea"));
+                            });
                         }
                 });
 
@@ -125,7 +129,6 @@ require([
                 $("#kt-incident-id").text(feature.attributes.incident);
                 $("#kt-report-id").text(feature.attributes.report);
             });
-        console.log($("textarea"));
         pdfContent();
     });
 
