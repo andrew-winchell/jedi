@@ -154,9 +154,9 @@ function keyTakeaways () {
 }
 
 function headerFooter (pdf, pages) {
-    for (i=0; i<pages; i++) {
+    for (let i=0; i<pages; i++) {
         pdf.setPage(i);
-        
+
         // Header
         pdf.setFontSize(12);
         pdf.setTextColor(255, 0, 0);
