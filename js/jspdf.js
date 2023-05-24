@@ -157,6 +157,8 @@ function headerFooter (pdf, pages) {
         pdf.setPage(i);
 
         // Header
+        var header = new Image();
+        header.src = "media/pdf_header.png";
         pdf.addImage(header, "png", 0.5, 0.75, 7.5, 0.75, "header");
         pdf.setFontSize(12);
         pdf.setTextColor(255, 0, 0);
