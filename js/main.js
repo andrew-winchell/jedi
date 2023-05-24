@@ -103,11 +103,12 @@ require([
                 JCATMasterLayer.queryRelatedFeatures(kt_query)
                     .then((kt_results) => {
                         let takeaways = kt_results[feature.attributes.objectid].features
+                        $(".keyTakeawayContainer").remove();
                         if (takeaways.length > 0) {
                             for (const takeaway of takeaways) {
                                 let ta_id = "#takeawayNo" + takeaway.attributes.objectid;
                                 $("#key-takeaways").append(
-                                    "<div draggable='true' class='listItemClass' id='" + ta_id.slice(1) + "'></div>"
+                                    "<div draggable='true' class='listItemClass keyTakeawayContainer' id='" + ta_id.slice(1) + "'></div>"
                                 );
                                 delay(500)
                                     .then(() => {
