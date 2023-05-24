@@ -108,9 +108,11 @@ require([
                                 let ta_id = "takeawayNo" + takeaway.attributes.objectid;
                                 $("#key-takeaways").append(
                                     "<div draggable='true' class='listItemClass' id='takeawayNo" + takeaway.attributes.objectid + 
-                                    "'><calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways></calcite-input></div>"
-                                )
-                                $("#"+ ta_id + " > calcite-input").value = takeaway.attributes.Key_Takeaways_other2;
+                                    "'></div>"
+                                );
+                                $("#"+ ta_id).append(
+                                    "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways value=" + takeaway.attributes.Key_Takeaways_other2 + "></calcite-input>"
+                                );
                             }
                         }
                 });
