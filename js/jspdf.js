@@ -10,7 +10,7 @@ function pdfContent() {
 
         let incident_id, incident_name, incident_type, incident_locs, report_id, report_dtg, incident_dtg;
 
-        delay(2000).then(() => { 
+        delay(1000).then(() => { 
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
@@ -146,8 +146,10 @@ function keyTakeaways () {
     let bullets = [];
 
     let takeaways = $("#key-takeaways")[0].children;
+    console.log(takeaways)
 
     for (const takeaway of takeaways) {
+        console.log(takeaway)
         let bullet = ["\u2022 " + takeaway.children[0].value];
         bullets.push(bullet);
     }
