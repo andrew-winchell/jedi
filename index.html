@@ -72,9 +72,6 @@
                 <calcite-button icon-start="chevron-up" id="mode-expander"></calcite-button>
                 <div id="incident-details-container" class="module-container">
                     <div class="form-container">
-                        <h2 style="padding-left: 25px;">
-                            New Incident
-                        </h2>
                         <form id="incident-form" onsubmit="return false;">
                             <table>
                                 <tr>
@@ -213,9 +210,14 @@
                             </tr>
                         </table>
 
-                        <calcite-label style="padding:0px 10px 0px 10px">
+                        <calcite-label style="padding:10px 10px 0px 10px">
                             <span style="display: contents;color: red;">* </span>Threat Name
-                            <calcite-input stype="text"></calcite-input>
+                            <calcite-input id="th-threat-name" type="text"></calcite-input>
+                        </calcite-label>
+
+                        <calcite-label style="padding:10px 10px 0px 10px">
+                            Threats and Hazards Overview
+                            <calcite-input id="th-overview" max-length="5000" type="textarea"></calcite-input>
                         </calcite-label>
 
                     </div>
