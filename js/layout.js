@@ -102,11 +102,11 @@ $("#key-takeaways-btn").on("click", (e) => {
 
 // Drag key takeaway bullets
 $(() => {
-    $("#key-takeaways").sortable()/*{
+    $("#key-takeaways").sortable({
         update: (event, ui) => {
             getIdsOfDivs();
         }
-    });*/
+    });
 });
 
 function getIdsOfDivs() {
