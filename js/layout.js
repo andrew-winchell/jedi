@@ -102,12 +102,9 @@ $("#key-takeaways-btn").on("click", (e) => {
 // Drag key takeaway bullets
 $(() => {
     let width = $(window).width;
-    $("#key-takeaways").resizable({
-        maxWidth: width,
-        minWidth: width
-    });
+    $("#key-takeaways").resizable();
 });
 
 $(() => {
-    $('.keyTakeawayContainer').resizable();
+    $("#key-takeaways").sortable();
 });
