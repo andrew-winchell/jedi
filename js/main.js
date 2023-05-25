@@ -93,6 +93,11 @@ require([
                 //$("#threat-name")[0].value = 
                 $("#incident-status")[0].value = feature.attributes.inc_status.slice(4);
 
+                // Key Takeaways inputs
+                $("#kt-incident-name").text(feature.attributes.incident_name);
+                $("#kt-incident-id").text(feature.attributes.incident);
+                $("#kt-report-id").text(feature.attributes.report);
+
                 const kt_query = {
                     outFields: ["*"],
                     relationshipId: 1,
@@ -119,11 +124,6 @@ require([
                             }
                         }
                 });
-
-                // Key Takeaways inputs
-                $("#kt-incident-name").text(feature.attributes.incident_name);
-                $("#kt-incident-id").text(feature.attributes.incident);
-                $("#kt-report-id").text(feature.attributes.report);
 
                 // Threats & Hazards inputs
                 $("#th-incident-name").text(feature.attributes.incident_name);
