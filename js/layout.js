@@ -106,5 +106,5 @@ $(() => {
 });
 
 $(() => {
-    $("#key-takeaways").sortable();
+    $("#key-takeaways").sortable({ handle: ".handle" });
 });
