@@ -151,7 +151,7 @@ function keyTakeaways () {
         if ($(takeaway).hasClass("ui-resizable-handle")) {
             console.log("Skip Handle");
         } else {
-            console.log(takeaway)
+            console.log($(takeaway))
             let bullet = ["\u2022 " + takeaway.value];
             bullets.push(bullet);
         }
