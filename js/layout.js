@@ -108,3 +108,5 @@ $(() => {
 $(() => {
     $("#key-takeaways").sortable({ handle: ".handle" });
 });
+
+$($($($("#th-overview")[0].shadowRoot)[0].children[0])[0].children[0].children[0]).css("height", "250px")
