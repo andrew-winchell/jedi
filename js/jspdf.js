@@ -152,7 +152,7 @@ function keyTakeaways () {
             console.log("Skip Handle");
         } else {
             console.log($(takeaway))
-            let bullet = ["\u2022 " + takeaway.value];
+            let bullet = ["\u2022 " + $(takeaway)[0].children[1].value];
             bullets.push(bullet);
         }
     }
