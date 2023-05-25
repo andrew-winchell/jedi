@@ -146,6 +146,7 @@ function keyTakeaways () {
     let bullets = [];
 
     let takeaways = $("#key-takeaways")[0].children;
+    console.log($("#key-takeaways"))
     console.log(takeaways)
 
     for (const takeaway of takeaways) {
