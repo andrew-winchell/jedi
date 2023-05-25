@@ -117,7 +117,8 @@ require([
                                 delay(500)
                                     .then(() => {
                                         $(ta_id).append(
-                                            "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways' value='" + takeaway.attributes.Key_Takeaways_other2 + "'></calcite-input>"
+                                            "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways' value='" + takeaway.attributes.Key_Takeaways_other2 + 
+                                            "'><calcite-button icon-start='trash' slot='action=' scale='m'></calcite-button></calcite-input>"
                                         );
                                     }
                                 )
