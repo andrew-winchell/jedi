@@ -10,7 +10,7 @@ function pdfContent() {
 
         let incident_id, incident_name, incident_type, incident_locs, report_id, report_dtg, incident_dtg;
 
-        delay(1500).then(() => { 
+        delay(2000).then(() => { 
 
             incident_id = $("#incident-id")[0].value;
             incident_name = $("#incident-name")[0].value;
