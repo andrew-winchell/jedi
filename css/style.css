@@ -152,3 +152,7 @@ td {
     cursor: move;
     user-select: none;
 }
+
+:host textarea {
+    height: 150px !important;
+}

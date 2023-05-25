@@ -108,14 +108,6 @@ $(() => {
 $(() => {
     $("#key-takeaways").sortable({ handle: ".handle" });
 });
-
-delay(2000)
-    .then(()=> {
-        $($($($("#th-overview")[0].shadowRoot)[0].children[0])[0].children[0].children[0]).css("height", "250px");
-        console.log("Text Height Configured")
-        let takeaways = $(".takeaways");
-        console.log(takeaways);
-    })
     
 function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
