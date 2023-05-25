@@ -117,3 +117,7 @@ function getIdsOfDivs() {
             .replace("takeawayNo", ""));
     });
 }
+
+$(() => {
+    $('.keyTakeawayContainer').resizable();
+});
