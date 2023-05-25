@@ -146,13 +146,15 @@ function keyTakeaways () {
     let bullets = [];
 
     let takeaways = $("#key-takeaways")[0].children;
-    console.log($("#key-takeaways"))
-    console.log(takeaways)
 
     for (const takeaway of takeaways) {
         console.log(takeaway)
-        let bullet = ["\u2022 " + takeaway.children[0].value];
-        bullets.push(bullet);
+        if (takeaway.hasClass("ui-resizable-handle")) {
+            console.log("Skip Handle");
+        } else {
+            let bullet = ["\u2022 " + takeaway.children[0].value];
+            bullets.push(bullet);
+        }
     }
 
     return bullets;
