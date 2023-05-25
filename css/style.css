@@ -139,8 +139,13 @@ td {
     margin-right: auto;
 }
 
+.keyTakeawayContainer {
+    display: flex;
+}
+
 .takeaways {
     padding: 2.5px;
+    width: -webkit-fill-available;
 }
 
 .draggable {
