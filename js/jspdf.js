@@ -148,10 +148,10 @@ function keyTakeaways () {
     let takeaways = $("#key-takeaways")[0].children;
 
     for (const takeaway of takeaways) {
-        console.log(takeaway)
         if ($(takeaway).hasClass("ui-resizable-handle")) {
             console.log("Skip Handle");
         } else {
+            console.log(takeaway)
             let bullet = ["\u2022 " + takeaway.value];
             bullets.push(bullet);
         }
