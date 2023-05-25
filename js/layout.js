@@ -112,10 +112,7 @@ $(() => {
 delay(2000)
     .then(()=> {
         $($($($("#th-overview")[0].shadowRoot)[0].children[0])[0].children[0].children[0]).css("height", "250px");
-        let keyTakeaways = $(".takeaways");
-        for (const ta of keyTakeaways) {
-            console.log(ta)
-            $($($(ta.shadowRoot)[0].children[0])[0].children[0].children[0]).css("height", "100px");
+        console.log("Text Height Configured")
     }
 })
     
