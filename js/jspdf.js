@@ -152,7 +152,7 @@ function keyTakeaways () {
         if ($(takeaway).hasClass("ui-resizable-handle")) {
             console.log("Skip Handle");
         } else {
-            let bullet = ["\u2022 " + takeaway.children[0].value];
+            let bullet = ["\u2022 " + takeaway.value];
             bullets.push(bullet);
         }
     }
