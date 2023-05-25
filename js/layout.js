@@ -114,10 +114,10 @@ delay(2000)
         $($($($("#th-overview")[0].shadowRoot)[0].children[0])[0].children[0].children[0]).css("height", "250px");
         let keyTakeaways = $(".takeaways");
         for (const ta of keyTakeaways) {
-            console.log($(ta))
+            console.log(ta)
             $($($(ta.shadowRoot)[0].children[0])[0].children[0].children[0]).css("height", "100px");
-        }
-    })
+    }
+})
     
 function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
