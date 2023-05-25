@@ -124,6 +124,12 @@ require([
                 $("#kt-incident-name").text(feature.attributes.incident_name);
                 $("#kt-incident-id").text(feature.attributes.incident);
                 $("#kt-report-id").text(feature.attributes.report);
+
+                // Threats & Hazards inputs
+                $("#th-incident-name").text(feature.attributes.incident_name);
+                $("#th-incident-id").text(feature.attributes.incident);
+                $("#th-report-id").text(feature.attributes.report);
+
             });
         pdfContent();
     });
