@@ -162,7 +162,7 @@ function keyTakeaways () {
 function threatsOverview () {
     let threats = $("#th-overview")[0].value;
 
-    return [["\u2022 " + threats]]
+    return [["\u2022 " + threats]];
 }
 
 function headerFooter (pdf, pages) {
