@@ -121,15 +121,9 @@ require([
                                             "<calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways' value='" + takeaway.attributes.Key_Takeaways_other2 + 
                                             "'><calcite-button icon-start='trash' slot='action' scale='l' appearance='transparent' kind='neutral'></calcite-button></calcite-input>"
                                         );
+                                        console.log($(".takeaways"));
                                     }
                                 )
-                                delay(100)
-                                    .then(() => {
-                                        let takeaways = $(".takeaways");
-                                        for (const ta of takeaways) {
-                                            $($(ta)[0].shadowRoot.children[0].children[0].children[0]).css("height", "150px");
-                                        }
-                                    });
                             }
                         }
                 });
