@@ -141,7 +141,6 @@ require([
 
                 JCATMasterLayer.queryRelatedFeatures(th_query)
                     .then((th_results) => {
-                        console.log(th_results);
                         let bullets = []
                         for (const bullet of th_results[feature.attributes.objectid].features) {
                             bullets.push(bullet.attributes.threats_point)
