@@ -153,6 +153,6 @@ td {
     user-select: none;
 }
 
-:host textarea {
+:host .element-wrapper textarea {
     height: 150px !important;
 }
