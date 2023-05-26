@@ -196,7 +196,7 @@ function headerFooter (pdf, pages) {
     
 }
 
-console.log($(".element-wrapper"))
+$(document).onload(console.log($(".element-wrapper")))
 
 $("#incident-name").on("calciteInputInput", (input) => {
     incident_id = input.target.value;
