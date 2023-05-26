@@ -47,7 +47,7 @@ function pdfContent() {
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
-                margin: {top:0.75, right:0.5, bottom:0.75, left:0.5},
+                margin: {top:1.75, right:0.5, bottom:0.75, left:0.5},
                 tableWidth: 7.5
             });
 
@@ -62,7 +62,7 @@ function pdfContent() {
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
-                margin: {top:0.75, right:0.5, bottom:0.75, left:0.5},
+                margin: {top:1.75, right:0.5, bottom:0.75, left:0.5},
                 tableWidth: 7.5
             });
 
@@ -77,7 +77,7 @@ function pdfContent() {
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
-                margin: {top:0.75, right:0.5, bottom:0.75, left:0.5},
+                margin: {top:1.75, right:0.5, bottom:0.75, left:0.5},
                 tableWidth: 7.5
             });
 
@@ -95,7 +95,7 @@ function pdfContent() {
                 theme: "plain",
                 tableLineWidth: 0.01,
                 tableLineColor: 0,
-                margin: {top:0.75, right:0.5, bottom:0.75, left:0.5},
+                margin: {top:1.75, right:0.5, bottom:0.75, left:0.5},
                 tableWidth: 7.5
             });
 
