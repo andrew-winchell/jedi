@@ -123,6 +123,13 @@ require([
                                         );
                                     }
                                 )
+                                delay(100)
+                                    .then(() => {
+                                        let takeaways = $(".takeaways");
+                                        for (const ta of takeaways) {
+                                            $($(ta)[0].shadowRoot.children[0].children[0].children[0]).css("height", "150px");
+                                        }
+                                    });
                             }
                         }
                 });
