@@ -160,7 +160,7 @@ function keyTakeaways () {
 }
 
 function threatsOverview () {
-    let threats = $("#th-overview")[0];
+    let threats = $("#th-overview").val();
 
     return ["\u2022 " + threats]
 }
