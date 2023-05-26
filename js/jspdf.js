@@ -81,6 +81,24 @@ function pdfContent() {
                 tableWidth: 7.5
             });
 
+            // IWA/IWL Statistics Table
+            let iwa_table = autoTable(pdf, {
+                head: [["3. Incident Watch Area/Incident Watch List Stats"]],
+                headStyles: { textColor:[90, 148, 242], fontStyle: "normal" },
+                body: [
+                    ["IWA:", "Sample IWA Info"],
+                    ["IWL:", "Sample IWL Info"]              
+                ],
+                bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
+                foot: [["Last Updated:"]],
+                footStyles: { textColor:[170, 170, 170], fontStyle: "normal", fontSize: 10 },
+                theme: "plain",
+                tableLineWidth: 0.01,
+                tableLineColor: 0,
+                margin: {top:0.75, right:0.5, bottom:0.75, left:0.5},
+                tableWidth: 7.5
+            });
+
             // TFM Impacts and Outlook Table
             let tfm_table = autoTable(pdf, {
                 head: [["4. TFM Impacts and Outlook"]],
