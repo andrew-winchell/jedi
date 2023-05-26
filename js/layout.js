@@ -121,7 +121,7 @@ delay(1000).then(() => {
     $($("#th-overview")[0].shadowRoot.children[0].children[0].children[0]).css("height", "250px")
 })
 
-console.log($(".form-container"))
+$(".form-container").css("height", "calc(100% - " + $("#tab-container").css("height") + ")")
     
 function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
