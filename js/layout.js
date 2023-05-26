@@ -97,6 +97,10 @@ $("#mode-expander").on("click", (e) => {
 // Add new key takeaway bullets
 $("#key-takeaways-btn").on("click", (e) => {
     $("#key-takeaways").append("<div draggable='true' class='listItemClass keyTakeawayContainer'><calcite-button icon-start='handle-vertical' class='handle' slot='action' scale='s' appearance='transparent' kind='neutral'></calcite-button><calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways'><calcite-button icon-start='trash' slot='action' scale='l' appearance='transparent' kind='neutral'></calcite-button></calcite-input></div>")
+    delay(100)
+        .then(() => {
+            console.log("test")
+        })
 });
 
 // Drag key takeaway bullets
