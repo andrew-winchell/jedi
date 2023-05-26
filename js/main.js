@@ -144,7 +144,7 @@ require([
                         console.log(th_results);
                         let bullets = []
                         for (const bullet of th_results[feature.attributes.objectid].features) {
-                            bullets.push("\u2022 " + bullet.attributes.threats_point)
+                            bullets.push(bullet.attributes.threats_point)
                         }
                         let threatsOverview = bullets.join("\n\n");
                         $("#th-overview").val(threatsOverview);
