@@ -196,10 +196,6 @@ function headerFooter (pdf, pages) {
     
 }
 
-delay(1000).then(() => {
-    $($("#th-overview")[0].shadowRoot.children[0].children[0].children[0]).css("height", "250px")
-})
-
 $("#incident-name").on("calciteInputInput", (input) => {
     incident_id = input.target.value;
     console.log(incident_id);
