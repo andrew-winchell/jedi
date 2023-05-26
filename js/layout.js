@@ -100,6 +100,7 @@ $("#key-takeaways-btn").on("click", (e) => {
     $("#key-takeaways").append("<div draggable='true' class='listItemClass keyTakeawayContainer'><calcite-button icon-start='handle-vertical' class='handle' slot='action' scale='s' appearance='transparent' kind='neutral'></calcite-button><calcite-input placeholder='Enter takeaway' max-length='250' type='textarea' class='takeaways'><calcite-button icon-start='trash' slot='action' scale='l' appearance='transparent' kind='neutral'></calcite-button></calcite-input></div>")
     delay(100)
         .then(() => {
+            // Set the heigh of all of the Key Takeaways
             let takeaways = $(".takeaways");
             for (const ta of takeaways) {
                 $($(ta)[0].shadowRoot.children[0].children[0].children[0]).css("height", "150px");
@@ -107,22 +108,27 @@ $("#key-takeaways-btn").on("click", (e) => {
         });
 });
 
-// Drag key takeaway bullets
+// Resize Key Takeaway bullets
 $(() => {
     let width = $(window).width;
     $("#key-takeaways").resizable();
 });
 
+// Reorder Key Takeaway bullets
 $(() => {
     $("#key-takeaways").sortable({ handle: ".handle" });
 });
 
+// Set height of Threats & Hazards text box
 delay(1000).then(() => {
     $($("#th-overview")[0].shadowRoot.children[0].children[0].children[0]).css("height", "250px")
 })
 
-$(".form-container").css("height", "calc(100% - 78px)")
+// Set the height of the form containers
+// so they do not hide underneath the tab bar
+$(".form-container").css("height", "calc(100% - 78px)");
     
+// Delay timer to use anywhere
 function delay (time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
