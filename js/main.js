@@ -142,7 +142,12 @@ require([
                 JCATMasterLayer.queryRelatedFeatures(th_query)
                     .then((th_results) => {
                         console.log(th_results);
-                        $("#th-overview").val("reset");
+                        let bullets = []
+                        for (const bullet of th_results[feature.attributes.objectid].features) {
+                            bullets.push("\u2022 " + bullet.attributes.threats_point)
+                        }
+                        let threatsOverview = bullets.join("\n\n");
+                        $("#th-overview").val(threatsOverview);
                     })
 
                 // Threats & Hazards inputs
