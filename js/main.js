@@ -141,7 +141,8 @@ require([
 
                 JCATMasterLayer.queryRelatedFeatures(th_query)
                     .then((th_results) => {
-                        $("#th-overview").value("reset");
+                        console.log(th_results);
+                        $("#th-overview").val("reset");
                     })
 
                 // Threats & Hazards inputs
