@@ -55,7 +55,7 @@ function pdfContent() {
             let kt_table = autoTable(pdf, {
                 head: [["1. Key Takeaways"]],
                 headStyles: { textColor:[90, 148, 242], fontStyle: "normal" },
-                body: keyTakeaways(incident_id),
+                body: keyTakeaways(),
                 bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
                 foot: [["Last Updated:"]],
                 footStyles: { textColor:[170, 170, 170], fontStyle: "normal", fontSize: 10 },
@@ -70,7 +70,7 @@ function pdfContent() {
             let th_table = autoTable(pdf, {
                 head: [["2. Threat/Hazard Overview"]],
                 headStyles: { textColor:[90, 148, 242], fontStyle: "normal" },
-                body: [[]],
+                body: threatsOverview(),
                 bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
                 foot: [["Last Updated:"]],
                 footStyles: { textColor:[170, 170, 170], fontStyle: "normal", fontSize: 10 },
@@ -157,6 +157,12 @@ function keyTakeaways () {
     }
 
     return bullets;
+}
+
+function threatsOverview () {
+    let threats = $("#th-overview")[0];
+
+    return ["\u2022 " + threats]
 }
 
 function headerFooter (pdf, pages) {
