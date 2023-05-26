@@ -152,7 +152,3 @@ td {
     cursor: move;
     user-select: none;
 }
-
-:host .element-wrapper {
-    height: 150px !important;
-}
