@@ -87,10 +87,11 @@ $("#module-tabs").on("calciteSegmentedControlChange", (e) => {
 $("#mode-expander").on("click", (e) => {
     $("#mode-container").slideToggle("slow");
     let icon = $("#mode-expander")[0].iconStart;
+    console.log(icon)
     if (icon == "chevron-up") {
-        icon = "chevron-down";
+        $("#mode-expander")[0].iconStart = "chevron-down";
     } else {
-        icon = "chevron-up";
+        $("#mode-expander")[0].iconStart = "chevron-up";
     }
 });
 
