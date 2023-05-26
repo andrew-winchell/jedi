@@ -133,6 +133,17 @@ require([
                         }
                 });
 
+                const th_query = {
+                    outFields: ["*"],
+                    relationshipId: 2,
+                    objectIds: feature.attributes.objectid
+                };
+
+                JCATMasterLayer.queryRelatedFeatures(th_query)
+                    .then((th_results) => {
+                        $("#th-overview").value("reset");
+                    })
+
                 // Threats & Hazards inputs
                 $("#th-incident-name").text(feature.attributes.incident_name);
                 $("#th-incident-id").text(feature.attributes.incident);
