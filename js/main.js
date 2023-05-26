@@ -123,8 +123,7 @@ require([
                                         );
                                         let takeaways = $(".takeaways");
                                         for (const ta of takeaways) {
-                                            console.log(ta)
-                                            //$($(ta)[0].shadowRoot.children[0].children[0].children[0]).css("height", "150px");
+                                            $($(ta)[0].shadowRoot.children[0].children[0].children[0]).css("height", "150px");
                                         }
                                     }
                                 )
