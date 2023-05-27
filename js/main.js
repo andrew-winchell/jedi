@@ -133,6 +133,11 @@ require([
                         }
                 });
 
+                // Threats & Hazards inputs
+                $("#th-incident-name").text(feature.attributes.incident_name);
+                $("#th-incident-id").text(feature.attributes.incident);
+                $("#th-report-id").text(feature.attributes.report);
+
                 const th_query = {
                     outFields: ["*"],
                     relationshipId: 2,
@@ -147,13 +152,18 @@ require([
                         }
                         let threatsOverview = bullets.join("\n\n");
                         $("#th-overview").val(threatsOverview);
-                    })
+                    });
 
-                // Threats & Hazards inputs
-                $("#th-incident-name").text(feature.attributes.incident_name);
-                $("#th-incident-id").text(feature.attributes.incident);
-                $("#th-report-id").text(feature.attributes.report);
+                const iwa_query = {
+                    outFields: ["*"],
+                    relationshipId: 3,
+                    objectIds: feature.attributes.objectid
+                };
 
+                JCATMasterLayer.queryRelatedFeatures(iwa_query)
+                    .then((iwa_results) => {
+                        console.log(iwa_results);
+                    });
             });
         pdfContent();
     });

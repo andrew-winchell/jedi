@@ -90,6 +90,9 @@ function pdfContent() {
                     ["IWL:", "Sample IWL Info"]              
                 ],
                 bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
+                columnStyles: {
+                    0: { cellWidth: 0.5 }
+                },
                 foot: [["Last Updated:"]],
                 footStyles: { textColor:[170, 170, 170], fontStyle: "normal", fontSize: 10 },
                 theme: "plain",
