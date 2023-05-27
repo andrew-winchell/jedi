@@ -95,7 +95,9 @@ function pdfContent() {
                 columnStyles: {
                     0: { cellWidth: 0.5 }
                 },
-                foot: [["Last Updated:"]],
+                foot: [
+                    [{ content: "Last Updated:", colSpan: 2 }]
+                ],
                 footStyles: { textColor:[170, 170, 170], fontStyle: "normal", fontSize: 10 },
                 theme: "plain",
                 tableLineWidth: 0.01,
