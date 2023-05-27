@@ -83,7 +83,9 @@ function pdfContent() {
 
             // IWA/IWL Statistics Table
             let iwa_table = autoTable(pdf, {
-                head: [["3. Incident Watch Area/Incident Watch List Stats"]],
+                head: [
+                    [{ content: "3. Incident Watch Area/Incident Watch List Stats", colSpan: 2 }]
+                ],
                 headStyles: { textColor:[90, 148, 242], fontStyle: "normal" },
                 body: [
                     ["IWA:", "Sample IWA Info"],
