@@ -93,7 +93,7 @@ function pdfContent() {
                 ],
                 bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
                 columnStyles: {
-                    0: { cellWidth: 1.5 }
+                    0: { cellWidth: 1 }
                 },
                 foot: [
                     [{ content: "Last Updated:", colSpan: 2 }]
