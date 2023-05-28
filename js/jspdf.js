@@ -93,10 +93,10 @@ function pdfContent() {
                 ],
                 bodyStyles: { cellPadding: {top: 0.125, right: 0.25, bottom: 0.125, left: 0.50}, cellWidth: 'wrap' },
                 columnStyles: {
-                    0: { cellWidth: 1, cellPadding: { top: 10, right: 0, bottom: 10, left: 10 }}
+                    0: { cellWidth: 1 }
                 },
                 foot: [
-                    [{ content: "Last Updated:", colSpan: 2}]
+                    [{ content: "Last Updated:", colSpan: 2 }]
                 ],
                 footStyles: { textColor:[170, 170, 170], fontStyle: "normal", fontSize: 10 },
                 theme: "plain",
